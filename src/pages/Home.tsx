@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Phone, MessageSquare, Zap, CheckCircle, ArrowRight, Menu, X, Star } from 'lucide-react';
+import { Phone, MessageSquare, CheckCircle, ArrowRight, Menu, X, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -23,7 +23,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-9 h-9 bg-black rounded-xl flex items-center justify-center">
-              <Zap size={18} className="text-white" />
+              <img 
+  src="/logo.png" 
+  alt="DVS Logo" 
+  style={{ width: '40px', height: '40px' }}
+/>
             </div>
             <div>
               <span className="font-bold text-lg leading-none block">DVS Automation</span>
@@ -147,7 +151,11 @@ export default function Home() {
                       <p>Hey! Sorry we missed your call. We'd love to help — what service do you need today?</p>
                     </div>
                     <div className="w-7 h-7 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Zap size={12} className="text-white" />
+                      <img 
+  src="/logo.png" 
+  alt="DVS Logo" 
+  style={{ width: '40px', height: '40px' }}
+/>
                     </div>
                   </div>
 
@@ -167,7 +175,11 @@ export default function Home() {
                       <p>Got it! We can get someone out first thing tomorrow. Can I grab your address to confirm the booking?</p>
                     </div>
                     <div className="w-7 h-7 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <Zap size={12} className="text-white" />
+                      <img 
+  src="/logo.png" 
+  alt="DVS Logo" 
+  style={{ width: '40px', height: '40px' }}
+/>
                     </div>
                   </div>
 
