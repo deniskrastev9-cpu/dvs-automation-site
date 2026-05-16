@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Phone, MessageSquare, CheckCircle, logo1, ArrowRight, Menu, X, Star } from 'lucide-react';
+import { Phone, MessageSquare, CheckCircle, logo1.png, ArrowRight, Menu, X, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
