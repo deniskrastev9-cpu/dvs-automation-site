@@ -148,7 +148,7 @@ export default function Home() {
                     </div>
                     <div className="w-7 h-7 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <img 
-  src="/logo1.png" 
+  src="/logo2.png" 
   alt="DVS Logo" 
   style={{ width: '40px', height: '40px' }}
 />
@@ -172,7 +172,7 @@ export default function Home() {
                     </div>
                     <div className="w-7 h-7 bg-gray-900 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                       <img 
-  src="/logo1.png" 
+  src="/logo2.png" 
   alt="DVS Logo" 
   style={{ width: '40px', height: '40px' }}
 />
@@ -232,7 +232,11 @@ export default function Home() {
                   highlight: 'Collects all key service details',
                 },
                 {
-                  icon: <Zap size={22} />,
+                  icon: <img 
+  src="/logo2.png" 
+  alt="DVS Logo" 
+  style={{ width: '40px', height: '40px' }}
+/>,
                   title: 'Business Automation',
                   desc: 'From appointment reminders to follow-up sequences, we build smart workflows that reduce admin work and keep customers informed at every step.',
                   highlight: 'Save hours every single week',
@@ -403,7 +407,11 @@ export default function Home() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-                <Zap size={14} className="text-white" />
+               <img 
+  src="/logo2.png" 
+  alt="DVS Logo" 
+  style={{ width: '40px', height: '40px' }}
+/> 
               </div>
               <span className="font-bold text-sm">DVS Automation Solutions LLC</span>
             </div>
