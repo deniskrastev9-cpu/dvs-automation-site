@@ -158,7 +158,11 @@ export default function Terms() {
         <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
-              <Zap size={14} className="text-white" />
+              <img 
+  src="/logo2.png" 
+  alt="DVS Logo"
+  style={{ width: '40px', height: '40px' }}
+/>
             </div>
             <span className="font-bold text-sm">DVS Automation Solutions LLC</span>
           </div>
