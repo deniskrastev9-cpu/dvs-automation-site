@@ -23,7 +23,11 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-9 h-9 bg-black rounded-xl flex items-center justify-center">
-              <img src="/logo2.png" alt="Logo" />
+              <img 
+  src="/logo2.png" 
+  alt="DVS Logo"
+  style={{ width: '40px', height: '40px' }}
+/>
             </div>
             <div>
               <span className="font-bold text-lg leading-none block">DVS Automation</span>
