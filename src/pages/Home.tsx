@@ -42,8 +42,7 @@ export default function Home() {
             <a
               href="mailto:service@dvsautomationsolutionsllc.com"
               className="bg-black text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-800 transition-colors"
-            >
-              Get a Demo
+            >Get a Demo
             </a>
           </nav>
 
