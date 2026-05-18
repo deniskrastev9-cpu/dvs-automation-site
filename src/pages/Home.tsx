@@ -45,7 +45,7 @@ export default function Home() {
             >
               <a
                 href="mailto:service@dvsautomationsolutionsllc.com?subject=Demo%20Request"
-                className="your-existing-classes"
+                className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
                 >
               Get a Demo
             </a>
