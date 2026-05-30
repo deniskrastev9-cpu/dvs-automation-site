@@ -173,7 +173,7 @@ function LeadForm() {
       <p style={{ textAlign: "center", opacity: 0.8 }}>
         Fill out the form and we will contact you.
       </p>
-
+<form
       onSubmit={async (e) => {
   e.preventDefault();
 
@@ -195,7 +195,7 @@ function LeadForm() {
   alert("Request sent successfully!");
   form.reset();
 }}
-
+>
         style={{
           display: "flex",
           flexDirection: "column",
