@@ -174,35 +174,34 @@ function LeadForm() {
         Fill out the form and we will contact you.
       </p>
 <form
-      onSubmit={async (e) => {
-  e.preventDefault();
+  onSubmit={async (e) => {
+    e.preventDefault();
 
-  const form = e.target as HTMLFormElement;
-  const data = new FormData(form);
+    const form = e.target as HTMLFormElement;
+    const data = new FormData(form);
 
-  const payload = {
-    name: data.get("name"),
-    business: data.get("business"),
-    phone: data.get("phone"),
-    message: data.get("message")
-  };
+    const payload = {
+      name: data.get("name"),
+      business: data.get("business"),
+      phone: data.get("phone"),
+      message: data.get("message")
+    };
 
-  await fetch("https://script.google.com/macros/s/AKfycbwBOuvZvDCYoJ20D7ZxjC9tUMc3W8JIVVO0Y8TGcMicjmK1un00hd1yiluWSXFQXzAtDw/exec", {
-    method: "POST",
-    body: JSON.stringify(payload)
-  });
+    await fetch("https://script.google.com/macros/s/AKfycbwBOuvZvDCYoJ20D7ZxjC9tUMc3W8JIVVO0Y8TGcMicjmK1un00hd1yiluWSXFQXzAtDw/exec", {
+      method: "POST",
+      body: JSON.stringify(payload)
+    });
 
-  alert("Request sent successfully!");
-  form.reset();
-}}
+    alert("Request sent successfully!");
+    form.reset();
+  }}
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
+    marginTop: "20px"
+  }}
 >
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-          marginTop: "20px"
-        }}
-      >
 
         <input name="name" placeholder="Your Name" required style={inputStyle} />
         <input name="business" placeholder="Business Name" required style={inputStyle} />
