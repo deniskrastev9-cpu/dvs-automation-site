@@ -107,23 +107,39 @@ export default function MissedCallTextBack() {
 
 function ColorSection({ title, children, color, accent }: any) {
   return (
-    <div style={{
-      background: color,
-      padding: "30px",
-      borderRadius: "16px",
-      marginBottom: "20px",
-      borderLeft: `6px solid ${accent}`,
-      boxShadow: "0 6px 15px rgba(0,0,0,0.05)"
-    }}>
-      <h2 style={{
-        color: accent,
-        marginBottom: "15px"
-      }}>
-        {title}
-      </h2>
+    <div style={{ position: "relative", marginBottom: "20px" }}>
 
-      <div style={{ color: "#111" }}>
-        {children}
+      {/* background glow */}
+      <div style={{
+        position: "absolute",
+        inset: "-6px",
+        background: color,
+        borderRadius: "18px",
+        filter: "blur(0px)",
+        opacity: 0.9,
+        zIndex: 0
+      }} />
+
+      {/* content */}
+      <div style={{
+        position: "relative",
+        padding: "30px",
+        borderRadius: "16px",
+        borderLeft: `6px solid ${accent}`,
+        background: "white",
+        boxShadow: "0 6px 15px rgba(0,0,0,0.05)",
+        zIndex: 1
+      }}>
+        <h2 style={{
+          color: accent,
+          marginBottom: "15px"
+        }}>
+          {title}
+        </h2>
+
+        <div style={{ color: "#111" }}>
+          {children}
+        </div>
       </div>
     </div>
   );
