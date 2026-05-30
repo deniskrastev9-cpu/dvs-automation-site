@@ -21,7 +21,7 @@ export default function CustomerFollowUpAutomation() {
         </div>
       </section>
 
-      {/* CONTENT WRAPPER */}
+      {/* BACKGROUND WRAPPER */}
       <div style={{
         maxWidth: "1000px",
         margin: "0 auto",
@@ -35,7 +35,7 @@ export default function CustomerFollowUpAutomation() {
           accent="#1e3a8a"
         >
           Most businesses lose 50–80% of leads because they don’t follow up fast enough.
-          Speed determines who wins the customer.
+          Speed is the difference between winning or losing a customer.
         </ColorSection>
 
         {/* HOW IT WORKS */}
@@ -45,11 +45,11 @@ export default function CustomerFollowUpAutomation() {
           accent="#0f766e"
         >
           <div style={{ lineHeight: "2" }}>
-            📩 Lead comes in<br />
-            ⚡ Instant SMS follow-up<br />
-            🔁 Automated reminders<br />
-            💬 Two-way conversation<br />
-            💰 Conversion into customer
+            📩 Lead comes in instantly<br />
+            ⚡ Automated SMS sent immediately<br />
+            🔁 Follow-up reminders scheduled<br />
+            💬 Two-way conversation starts<br />
+            💰 Customer converts automatically
           </div>
         </ColorSection>
 
@@ -62,17 +62,22 @@ export default function CustomerFollowUpAutomation() {
           <ul style={{ lineHeight: "2" }}>
             <li>Higher conversion rates</li>
             <li>Faster response time</li>
-            <li>Automated follow-up system</li>
+            <li>Automated lead nurturing</li>
             <li>More booked jobs</li>
+            <li>Less manual work</li>
           </ul>
         </ColorSection>
+
+        {/* LEAD FORM */}
+        <LeadForm />
 
       </div>
     </div>
   );
 }
 
-/* reuse same section component */
+/* ================= SECTION COMPONENT ================= */
+
 function ColorSection({ title, children, color, accent }: any) {
   return (
     <div style={{ position: "relative", marginBottom: "20px" }}>
@@ -96,8 +101,102 @@ function ColorSection({ title, children, color, accent }: any) {
         <h2 style={{ color: accent }}>
           {title}
         </h2>
-        <div>{children}</div>
+        <div style={{ color: "#111" }}>
+          {children}
+        </div>
       </div>
     </div>
   );
 }
+
+/* ================= LEAD FORM ================= */
+
+function LeadForm() {
+  return (
+    <div style={{
+      background: "#0f172a",
+      color: "white",
+      padding: "40px",
+      borderRadius: "16px",
+      marginTop: "40px"
+    }}>
+
+      <h2 style={{ textAlign: "center", fontSize: "28px" }}>
+        Get Automated Follow-Up for Your Business
+      </h2>
+
+      <p style={{ textAlign: "center", opacity: 0.8 }}>
+        Fill out the form and we’ll contact you.
+      </p>
+
+      <form
+        onSubmit={async (e) => {
+          e.preventDefault();
+
+          const form = e.target as HTMLFormElement;
+          const data = new FormData(form);
+
+          const payload = {
+            name: data.get("name"),
+            business: data.get("business"),
+            phone: data.get("phone"),
+            message: data.get("message")
+          };
+
+          await fetch("https://script.google.com/macros/s/AKfycbwBOuvZvDCYoJ20D7ZxjC9tUMc3W8JIVVO0Y8TGcMicjmK1un00hd1yiluWSXFQXzAtDw/exec", {
+            method: "POST",
+            body: JSON.stringify(payload)
+          });
+
+          alert("Request sent successfully!");
+          form.reset();
+        }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+          marginTop: "20px"
+        }}
+      >
+
+        <input name="name" placeholder="Your Name" required style={inputStyle} />
+        <input name="business" placeholder="Business Name" required style={inputStyle} />
+        <input name="phone" placeholder="Phone Number" required style={inputStyle} />
+        <textarea name="message" placeholder="Tell us about your business" style={textareaStyle} />
+
+        <button type="submit" style={buttonStyle}>
+          Send Request
+        </button>
+
+      </form>
+    </div>
+  );
+}
+
+/* ================= STYLES ================= */
+
+const inputStyle = {
+  padding: "12px",
+  borderRadius: "8px",
+  border: "none",
+  outline: "none"
+};
+
+const textareaStyle = {
+  padding: "12px",
+  borderRadius: "8px",
+  border: "none",
+  outline: "none",
+  height: "100px"
+};
+
+const buttonStyle = {
+  padding: "14px",
+  borderRadius: "8px",
+  border: "none",
+  background: "white",
+  color: "#0f172a",
+  fontWeight: "bold",
+  cursor: "pointer",
+  marginTop: "10px"
+};
