@@ -174,26 +174,27 @@ function LeadForm() {
         Fill out the form and we will contact you.
       </p>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
+      onSubmit={async (e) => {
+  e.preventDefault();
 
-          const form = e.target as HTMLFormElement;
-          const data = new FormData(form);
+  const form = e.target as HTMLFormElement;
+  const data = new FormData(form);
 
-          const name = data.get("name");
-          const business = data.get("business");
-          const phone = data.get("phone");
-          const message = data.get("message");
+  const payload = {
+    name: data.get("name"),
+    business: data.get("business"),
+    phone: data.get("phone"),
+    message: data.get("message")
+  };
 
-          const mailto = `mailto:service@dvsautomationsolutionsllc.com?subject=New Lead - Missed Call Automation&body=
-Name: ${name}%0D%0A
-Business: ${business}%0D%0A
-Phone: ${phone}%0D%0A
-Message: ${message}`;
+  await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_URL/exec", {
+    method: "POST",
+    body: JSON.stringify(payload)
+  });
 
-          window.location.href = mailto;
-        }}
+  alert("Request sent successfully!");
+  form.reset();
+}}
 
         style={{
           display: "flex",
