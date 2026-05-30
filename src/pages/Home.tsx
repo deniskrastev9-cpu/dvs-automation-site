@@ -123,76 +123,48 @@ export default function Home() {
         </div>
 
         {menuOpen && (
-  <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-3">
+  <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-2">
 
-    <Link
-      to="/"
-      className="text-sm font-medium text-gray-700"
-      onClick={() => setMenuOpen(false)}
-    >
-      Home
-    </Link>
+    <p className="text-xs text-gray-400 uppercase mb-2">Services</p>
 
-    <p className="text-xs text-gray-400 uppercase mt-2">Services</p>
-
-    <Link
+    <Link className="px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium"
       to="/services/missed-call-text-back"
-      className="text-sm font-medium text-gray-700"
       onClick={() => setMenuOpen(false)}
     >
       📞 Missed Call Text Back
     </Link>
 
-    <Link
+    <Link className="px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium"
       to="/services/customer-follow-up"
-      className="text-sm font-medium text-gray-700"
       onClick={() => setMenuOpen(false)}
     >
       💬 Customer Follow-Up Automation
     </Link>
 
-    <Link
+    <Link className="px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium"
       to="/services/lead-capture"
-      className="text-sm font-medium text-gray-700"
       onClick={() => setMenuOpen(false)}
     >
       🧲 Lead Capture Automation
     </Link>
 
-    <Link
+    <Link className="px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium"
       to="/services/crm-automation"
-      className="text-sm font-medium text-gray-700"
       onClick={() => setMenuOpen(false)}
     >
       📊 CRM Automation System
     </Link>
 
-    <div className="border-t pt-3 mt-2">
+    <div className="border-t mt-3 pt-3">
 
       <a
-        href="/privacy"
-        className="text-sm font-medium text-gray-500 block"
-        onClick={() => setMenuOpen(false)}
+        href="mailto:service@dvsautomationsolutionsllc.com"
+        className="block bg-black text-white text-center py-3 rounded-xl text-sm font-semibold"
       >
-        Privacy Policy
-      </a>
-
-      <a
-        href="/terms"
-        className="text-sm font-medium text-gray-500 block mt-2"
-        onClick={() => setMenuOpen(false)}
-      >
-        Terms of Service
+        Get a Demo
       </a>
 
     </div>
-
-    <a
-      href="mailto:service@dvsautomationsolutionsllc.com"
-      className="bg-black text-white px-5 py-2.5 rounded-xl text-sm font-semibold text-center mt-3"
-    >
-      Get a Demo
-    </a>
 
   </div>
 )}
