@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import MissedCallTextBack from "./pages/MissedCallTextBack";
+import CustomerFollowUpAutomation from "./pages/CustomerFollowUpAutomation";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/services/missed-call-text-back" element={<MissedCallTextBack />} />
+        <Route path="/services/customer-follow-up" element={<CustomerFollowUpAutomation />} />
       </Routes>
       <Analytics />
       <SpeedInsights />
