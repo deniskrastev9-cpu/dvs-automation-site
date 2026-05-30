@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <<nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-6">
 
   {/* SERVICES DROPDOWN */}
   <div className="relative group">
