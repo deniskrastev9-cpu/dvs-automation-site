@@ -187,7 +187,7 @@ function LeadForm() {
     message: data.get("message")
   };
 
-  await fetch("https://script.google.com/macros/s/YOUR_SCRIPT_URL/exec", {
+  await fetch("https://script.google.com/macros/s/AKfycbwBOuvZvDCYoJ20D7ZxjC9tUMc3W8JIVVO0Y8TGcMicjmK1un00hd1yiluWSXFQXzAtDw/exec", {
     method: "POST",
     body: JSON.stringify(payload)
   });
