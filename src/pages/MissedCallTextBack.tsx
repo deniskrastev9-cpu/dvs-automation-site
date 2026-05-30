@@ -112,20 +112,25 @@ export default function MissedCallTextBack() {
             </p>
 
             <a
-              href="mailto:service@dvsautomationsolutionsllc.com?subject=Missed Call Automation Inquiry"
-              style={{
-                display: "inline-block",
-                marginTop: "25px",
-                padding: "14px 28px",
-                background: "white",
-                color: "#0f172a",
-                borderRadius: "10px",
-                fontWeight: "bold",
-                textDecoration: "none"
-              }}
-            >
-              Contact Us
-            </a>
+  href="mailto:service@dvsautomationsolutionsllc.com?subject=Missed Call Automation Inquiry"
+  onClick={(e) => {
+    // fallback copy email if mail client doesn't open
+    navigator.clipboard.writeText("service@dvsautomationsolutionsllc.com");
+  }}
+  style={{
+    display: "inline-block",
+    marginTop: "25px",
+    padding: "14px 28px",
+    background: "white",
+    color: "#0f172a",
+    borderRadius: "10px",
+    fontWeight: "bold",
+    textDecoration: "none",
+    cursor: "pointer"
+  }}
+>
+  Contact Us
+</a>
           </div>
 
         </div>
