@@ -6,73 +6,90 @@ export default function MissedCallTextBack() {
       <section style={{
         background: "linear-gradient(135deg, #0f172a, #1e3a8a)",
         color: "white",
-        padding: "80px 20px",
+        padding: "90px 20px",
         textAlign: "center"
       }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h1 style={{ fontSize: "48px", marginBottom: "15px" }}>
+          <h1 style={{ fontSize: "50px", marginBottom: "15px" }}>
             Never Miss Another Customer Call
           </h1>
 
           <p style={{ fontSize: "20px", opacity: 0.9 }}>
-            Automatic missed-call text back system that helps service businesses
+            Automated missed-call text back system that helps service businesses
             capture more leads instantly.
           </p>
         </div>
       </section>
 
-      {/* WRAPPER */}
-      <div style={{
-        maxWidth: "1000px",
-        margin: "0 auto",
-        padding: "50px 20px"
-      }}>
+      {/* CONTENT */}
+      <div style={{ maxWidth: "1000px", margin: "0 auto", padding: "50px 20px" }}>
 
-        {/* SECTION CARD STYLE */}
-        <Section title="Why This Matters">
+        {/* WHY */}
+        <ColorSection
+          title="Why This Matters"
+          color="#eef2ff"
+          accent="#1e3a8a"
+        >
           Every missed call is a potential lost customer. Most businesses
           cannot answer every call during busy hours or after hours.
-        </Section>
+        </ColorSection>
 
-        <Section title="How It Works">
-          <Steps />
-        </Section>
+        {/* HOW IT WORKS */}
+        <ColorSection
+          title="How It Works"
+          color="#ecfeff"
+          accent="#0f766e"
+        >
+          <div style={{ fontSize: "18px", lineHeight: "2.2" }}>
+            <Step icon="📞" text="Customer calls your business" />
+            <Step icon="❌" text="Call is missed or not answered" />
+            <Step icon="💬" text="Automatic text message is sent instantly" />
+            <Step icon="📲" text="Customer responds to your message" />
+            <Step icon="💰" text="You capture the lead and follow up" />
+          </div>
+        </ColorSection>
 
-        <Section title="Benefits">
-          <ul style={{ paddingLeft: "20px", lineHeight: "2" }}>
-            <li>Instant response to missed calls</li>
-            <li>More leads captured automatically</li>
-            <li>Better customer experience</li>
-            <li>Higher conversion rates</li>
+        {/* BENEFITS */}
+        <ColorSection
+          title="Benefits"
+          color="#f0fdf4"
+          accent="#166534"
+        >
+          <ul style={{ lineHeight: "2", fontSize: "16px" }}>
+            <li>⚡ Instant response to missed calls</li>
+            <li>📈 More leads captured automatically</li>
+            <li>🤝 Better customer experience</li>
+            <li>💼 More professional communication system</li>
+            <li>💰 Higher conversion rates</li>
           </ul>
-        </Section>
+        </ColorSection>
 
         {/* CTA */}
         <div style={{
           background: "#0f172a",
           color: "white",
-          padding: "40px",
+          padding: "50px",
           borderRadius: "16px",
           textAlign: "center",
           marginTop: "40px"
         }}>
-          <h2 style={{ fontSize: "28px" }}>
+          <h2 style={{ fontSize: "30px" }}>
             Ready to Automate Your Missed Calls?
           </h2>
 
-          <p style={{ opacity: 0.85 }}>
-            Contact us today and start capturing lost leads instantly.
+          <p style={{ opacity: 0.85, marginTop: "10px" }}>
+            Start capturing more leads without missing customers again.
           </p>
 
           <a
             href="mailto:service@dvsautomationsolutionsllc.com"
             style={{
               display: "inline-block",
-              marginTop: "20px",
-              padding: "12px 24px",
+              marginTop: "25px",
+              padding: "14px 28px",
               background: "white",
               color: "#0f172a",
-              borderRadius: "8px",
+              borderRadius: "10px",
               fontWeight: "bold",
               textDecoration: "none"
             }}
@@ -88,66 +105,40 @@ export default function MissedCallTextBack() {
 
 /* ================= COMPONENTS ================= */
 
-function Section({ title, children }: any) {
+function ColorSection({ title, children, color, accent }: any) {
   return (
-    <div
-      style={{
-        background: "white",
-        padding: "30px",
-        borderRadius: "14px",
-        marginBottom: "20px",
-        border: "1px solid #e5e7eb",
-        boxShadow: "0 4px 12px rgba(0,0,0,0.04)",
-        transform: "translateY(0)",
-        transition: "0.3s"
-      }}
-      onMouseEnter={(e) => {
-        (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)";
-        (e.currentTarget as HTMLDivElement).style.boxShadow =
-          "0 10px 20px rgba(0,0,0,0.08)";
-      }}
-      onMouseLeave={(e) => {
-        (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
-        (e.currentTarget as HTMLDivElement).style.boxShadow =
-          "0 4px 12px rgba(0,0,0,0.04)";
-      }}
-    >
+    <div style={{
+      background: color,
+      padding: "30px",
+      borderRadius: "16px",
+      marginBottom: "20px",
+      borderLeft: `6px solid ${accent}`,
+      boxShadow: "0 6px 15px rgba(0,0,0,0.05)"
+    }}>
       <h2 style={{
-        color: "#1e3a8a",
-        marginBottom: "10px"
+        color: accent,
+        marginBottom: "15px"
       }}>
         {title}
       </h2>
-      <div style={{ color: "#333", lineHeight: "1.7" }}>
+
+      <div style={{ color: "#111" }}>
         {children}
       </div>
     </div>
   );
 }
 
-function Steps() {
-  const steps = [
-    "Customer calls your business",
-    "Call is missed",
-    "Automatic text is sent",
-    "Customer responds",
-    "You capture the lead"
-  ];
-
+function Step({ icon, text }: any) {
   return (
-    <div style={{ lineHeight: "2" }}>
-      {steps.map((step, i) => (
-        <div
-          key={i}
-          style={{
-            padding: "10px 0",
-            borderBottom: i !== steps.length - 1 ? "1px solid #eee" : "none"
-          }}
-        >
-          <span style={{ marginRight: "10px" }}>➡️</span>
-          {step}
-        </div>
-      ))}
+    <div style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      padding: "10px 0"
+    }}>
+      <span style={{ fontSize: "20px" }}>{icon}</span>
+      <span>{text}</span>
     </div>
   );
 }
