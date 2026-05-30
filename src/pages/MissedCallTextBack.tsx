@@ -2,7 +2,7 @@ export default function MissedCallTextBack() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
 
-      {/* HERO (UNCHANGED STYLE) */}
+      {/* HERO */}
       <section style={{
         background: "linear-gradient(135deg, #0f172a, #1e3a8a)",
         color: "white",
@@ -20,19 +20,9 @@ export default function MissedCallTextBack() {
           </p>
         </div>
       </section>
-      <style>{`
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-`}</style>
 
       {/* BACKGROUND WRAPPER */}
-      <div style={{
-        position: "relative",
-        overflow: "hidden"
-      }}>
+      <div style={{ position: "relative", overflow: "hidden" }}>
 
         {/* ANIMATED BACKGROUND */}
         <div style={{
@@ -47,14 +37,14 @@ export default function MissedCallTextBack() {
           zIndex: -1
         }} />
 
-        {/* CONTENT WRAPPER */}
+        {/* CONTENT */}
         <div style={{
           maxWidth: "1000px",
           margin: "0 auto",
           padding: "50px 20px"
         }}>
 
-          {/* WHY SECTION */}
+          {/* WHY */}
           <ColorSection
             title="Why This Matters"
             color="#eef2ff"
@@ -94,61 +84,31 @@ export default function MissedCallTextBack() {
             </ul>
           </ColorSection>
 
-          {/* CTA */}
-          <div style={{
-            background: "#0f172a",
-            color: "white",
-            padding: "50px",
-            borderRadius: "16px",
-            textAlign: "center",
-            marginTop: "40px"
-          }}>
-            <h2 style={{ fontSize: "30px" }}>
-              Ready to Automate Your Missed Calls?
-            </h2>
-
-            <p style={{ opacity: 0.85, marginTop: "10px" }}>
-              Start capturing more leads instantly.
-            </p>
-
-            <a
-  href="mailto:service@dvsautomationsolutionsllc.com?subject=Missed Call Automation Inquiry"
-  onClick={(e) => {
-    // fallback copy email if mail client doesn't open
-    navigator.clipboard.writeText("service@dvsautomationsolutionsllc.com");
-  }}
-  style={{
-    display: "inline-block",
-    marginTop: "25px",
-    padding: "14px 28px",
-    background: "white",
-    color: "#0f172a",
-    borderRadius: "10px",
-    fontWeight: "bold",
-    textDecoration: "none",
-    cursor: "pointer"
-  }}
->
-  Contact Us
-</a>
-          </div>
+          {/* LEAD FORM */}
+          <LeadForm />
 
         </div>
       </div>
 
-      {/* COMPONENTS */}
-      <ColorSectionImpl />
+      {/* STYLES */}
+      <style>{`
+        @keyframes gradientMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
+
     </div>
   );
 }
 
-/* ================= SECTION COMPONENT ================= */
+/* ================= SECTION ================= */
 
 function ColorSection({ title, children, color, accent }: any) {
   return (
     <div style={{ position: "relative", marginBottom: "20px" }}>
 
-      {/* glow background */}
       <div style={{
         position: "absolute",
         inset: "-6px",
@@ -158,7 +118,6 @@ function ColorSection({ title, children, color, accent }: any) {
         opacity: 0.9
       }} />
 
-      {/* card */}
       <div style={{
         position: "relative",
         padding: "30px",
@@ -195,19 +154,93 @@ function Step({ icon, text }: any) {
   );
 }
 
-/* ================= ANIMATION ================= */
+/* ================= LEAD FORM ================= */
 
-function ColorSectionImpl() {
+function LeadForm() {
   return (
-    <style>
-      {`
-        @keyframes gradientMove {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}
-    </style>
+    <div style={{
+      background: "#0f172a",
+      color: "white",
+      padding: "40px",
+      borderRadius: "16px",
+      marginTop: "40px"
+    }}>
+
+      <h2 style={{ textAlign: "center", fontSize: "28px" }}>
+        Get Missed Call Automation Setup
+      </h2>
+
+      <p style={{ textAlign: "center", opacity: 0.8 }}>
+        Fill out the form and we will contact you.
+      </p>
+
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+
+          const form = e.target as HTMLFormElement;
+          const data = new FormData(form);
+
+          const name = data.get("name");
+          const business = data.get("business");
+          const phone = data.get("phone");
+          const message = data.get("message");
+
+          const mailto = `mailto:service@dvsautomationsolutionsllc.com?subject=New Lead - Missed Call Automation&body=
+Name: ${name}%0D%0A
+Business: ${business}%0D%0A
+Phone: ${phone}%0D%0A
+Message: ${message}`;
+
+          window.location.href = mailto;
+        }}
+
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+          marginTop: "20px"
+        }}
+      >
+
+        <input name="name" placeholder="Your Name" required style={inputStyle} />
+        <input name="business" placeholder="Business Name" required style={inputStyle} />
+        <input name="phone" placeholder="Phone Number" required style={inputStyle} />
+        <textarea name="message" placeholder="Tell us about your business" style={textareaStyle} />
+
+        <button type="submit" style={buttonStyle}>
+          Send Request
+        </button>
+
+      </form>
+    </div>
   );
 }
 
+/* ================= STYLES ================= */
+
+const inputStyle = {
+  padding: "12px",
+  borderRadius: "8px",
+  border: "none",
+  outline: "none"
+};
+
+const textareaStyle = {
+  padding: "12px",
+  borderRadius: "8px",
+  border: "none",
+  outline: "none",
+  height: "100px"
+};
+
+const buttonStyle = {
+  padding: "14px",
+  borderRadius: "8px",
+  border: "none",
+  background: "white",
+  color: "#0f172a",
+  fontWeight: "bold",
+  cursor: "pointer",
+  marginTop: "10px"
+};
