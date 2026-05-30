@@ -35,16 +35,71 @@ export default function Home() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#services" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">Services</a>
-            <a href="#how-it-works" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">How It Works</a>
-            <a href="#industries" className="text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">Industries</a>
-            <a
-              href="mailto:service@dvsautomationsolutionsllc.com"
-              className="bg-black text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-800 transition-colors"
-            >Get a Demo
-            </a>
-          </nav>
+          <nav className="hidden md:flex items-center gap-8 relative">
+
+  <Link to="/" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
+    Home
+  </Link>
+
+  {/* SERVICES DROPDOWN */}
+  <div className="relative group">
+
+    <button className="text-sm text-gray-600 hover:text-gray-900 font-medium flex items-center gap-1">
+      Services
+      <span className="text-xs">▼</span>
+    </button>
+
+    {/* DROPDOWN MENU */}
+    <div className="absolute top-8 left-0 w-72 bg-white border border-gray-100 shadow-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+
+      <Link
+        to="/services/missed-call-text-back"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      >
+        📞 Missed Call Text Back
+      </Link>
+
+      <Link
+        to="/services/customer-follow-up"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      >
+        💬 Customer Follow-Up Automation
+      </Link>
+
+      <Link
+        to="/services/lead-capture"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      >
+        🧲 Lead Capture Automation
+      </Link>
+
+      <Link
+        to="/services/crm-automation"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      >
+        📊 CRM Automation System
+      </Link>
+
+    </div>
+  </div>
+
+  {/* OTHER NAV ITEMS */}
+  <a href="#how-it-works" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
+    How It Works
+  </a>
+
+  <a href="#industries" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
+    Industries
+  </a>
+
+  <a
+    href="mailto:service@dvsautomationsolutionsllc.com"
+    className="bg-black text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-800 transition-colors"
+  >
+    Get a Demo
+  </a>
+
+</nav>
 
           <button
             className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
