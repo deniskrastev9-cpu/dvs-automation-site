@@ -35,47 +35,49 @@ export default function Home() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8 relative">
-
-  <Link to="/" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
-    Home
-  </Link>
+          <<nav className="hidden md:flex items-center gap-6">
 
   {/* SERVICES DROPDOWN */}
   <div className="relative group">
 
-    <button className="text-sm text-gray-600 hover:text-gray-900 font-medium flex items-center gap-1">
+    <button className="
+      px-4 py-2 rounded-xl text-sm font-semibold
+      text-gray-700 hover:text-black hover:bg-gray-100
+      transition-all flex items-center gap-2
+    ">
       Services
       <span className="text-xs">▼</span>
     </button>
 
-    {/* DROPDOWN MENU */}
-    <div className="absolute top-8 left-0 w-72 bg-white border border-gray-100 shadow-xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+    {/* DROPDOWN */}
+    <div className="
+      absolute top-12 left-0 w-72
+      bg-white border border-gray-100
+      shadow-xl rounded-2xl
+      opacity-0 invisible group-hover:opacity-100 group-hover:visible
+      transition-all duration-200 z-50 overflow-hidden
+    ">
 
-      <Link
-        to="/services/missed-call-text-back"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      <Link to="/services/missed-call-text-back"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
       >
         📞 Missed Call Text Back
       </Link>
 
-      <Link
-        to="/services/customer-follow-up"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      <Link to="/services/customer-follow-up"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
       >
         💬 Customer Follow-Up Automation
       </Link>
 
-      <Link
-        to="/services/lead-capture"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      <Link to="/services/lead-capture"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
       >
         🧲 Lead Capture Automation
       </Link>
 
-      <Link
-        to="/services/crm-automation"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm"
+      <Link to="/services/crm-automation"
+        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
       >
         📊 CRM Automation System
       </Link>
@@ -83,18 +85,29 @@ export default function Home() {
     </div>
   </div>
 
-  {/* OTHER NAV ITEMS */}
-  <a href="#how-it-works" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
+  {/* OTHER NAV BUTTONS */}
+  <a
+    href="#how-it-works"
+    className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
+  >
     How It Works
   </a>
 
-  <a href="#industries" className="text-sm text-gray-600 hover:text-gray-900 font-medium">
+  <a
+    href="#industries"
+    className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
+  >
     Industries
   </a>
 
+  {/* CTA BUTTON */}
   <a
     href="mailto:service@dvsautomationsolutionsllc.com"
-    className="bg-black text-white px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-800 transition-colors"
+    className="
+      bg-black text-white px-5 py-2.5 rounded-xl
+      text-sm font-semibold hover:bg-gray-800
+      transition-all shadow-sm
+    "
   >
     Get a Demo
   </a>
