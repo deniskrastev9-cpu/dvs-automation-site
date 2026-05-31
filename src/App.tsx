@@ -1,40 +1,32 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Pricing from "./pages/Pricing";
-
 import MissedCallTextBack from "./pages/MissedCallTextBack";
 import CustomerFollowUpAutomation from "./pages/CustomerFollowUpAutomation";
 import LeadCaptureAutomation from "./pages/LeadCaptureAutomation";
-import CRMAutomation from "./pages/CRMAutomation";
+import CRMAutomationSystem from "./pages/CRMAutomationSystem";
 import AiReceptionist from "./pages/AiReceptionist";
+import Pricing from "./pages/Pricing";
 
-import Privacy from "./pages/PrivacyPolicy";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-
-        {/* HOME */}
         <Route path="/" element={<Home />} />
 
-        {/* PRICING */}
+        <Route path="/services/missed-call-text-back" element={<MissedCallTextBack />} />
+        <Route path="/services/customer-follow-up" element={<CustomerFollowUpAutomation />} />
+        <Route path="/services/lead-capture" element={<LeadCaptureAutomation />} />
+        <Route path="/services/crm-automation" element={<CRMAutomationSystem />} />
+        <Route path="/services/ai-receptionist" element={<AiReceptionist />} />
         <Route path="/pricing" element={<Pricing />} />
 
-        {/* SERVICES */}
-        <Route path="/services/missed-call-text-back" element={<MissedCallTextBack />} />
-        <Route path="/services/customer-follow-up-automation" element={<CustomerFollowUpAutomation />} />
-        <Route path="/services/lead-capture-automation" element={<LeadCaptureAutomation />} />
-        <Route path="/services/crm-automation" element={<CrmAutomation />} />
-        <Route path="/services/ai-receptionist" element={<AiReceptionist />} />
-
-        {/* LEGAL PAGES */}
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
-
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
