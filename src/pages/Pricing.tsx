@@ -28,7 +28,7 @@ export default function Pricing() {
           </ul>
 
           <Link
-  to="/services/lead-capture?plan=Starter"
+  to="/services/missed-call-text-back?plan=Starter"
   className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
 >
   Get Started
@@ -47,7 +47,7 @@ export default function Pricing() {
           </ul>
 
           <Link
-  to="/services/lead-capture?plan=Growth"
+  to="/services/crm-automation?plan=Growth"
   className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
 >
   Get Started
@@ -66,7 +66,7 @@ export default function Pricing() {
           </ul>
 
           <Link
-  to="/services/lead-capture?plan=Pro"
+  to="/services/ai-receptionist?plan=Pro"
   className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
 >
   Get Started
