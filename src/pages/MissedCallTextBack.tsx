@@ -1,3 +1,4 @@
+import { useSearchParams } from "react-router-dom";
 export default function MissedCallTextBack() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
@@ -157,64 +158,96 @@ function Step({ icon, text }: any) {
 /* ================= LEAD FORM ================= */
 
 function LeadForm() {
-  return (
-    <div style={{
-      background: "#0f172a",
-      color: "white",
-      padding: "40px",
-      borderRadius: "16px",
-      marginTop: "40px"
-    }}>
+const [searchParams] = useSearchParams();
 
-      <h2 style={{ textAlign: "center", fontSize: "28px" }}>
-        Get Missed Call Automation Setup
-      </h2>
+const plan = searchParams.get("plan") || "Starter";
 
-      <p style={{ textAlign: "center", opacity: 0.8 }}>
-        Fill out the form and we will contact you.
-      </p>
-<form
-  onSubmit={async (e) => {
-    e.preventDefault();
-
-    const form = e.target as HTMLFormElement;
-    const data = new FormData(form);
-
-    const payload = {
-      name: data.get("name"),
-      business: data.get("business"),
-      phone: data.get("phone"),
-      message: data.get("message")
-    };
-
-    await fetch("https://script.google.com/macros/s/AKfycbwBOuvZvDCYoJ20D7ZxjC9tUMc3W8JIVVO0Y8TGcMicjmK1un00hd1yiluWSXFQXzAtDw/exec", {
-      method: "POST",
-      body: JSON.stringify(payload)
-    });
-
-    alert("Request sent successfully!");
-    form.reset();
-  }}
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-    marginTop: "20px"
-  }}
+return (
+<div
+style={{
+background: "#0f172a",
+color: "white",
+padding: "40px",
+borderRadius: "16px",
+marginTop: "40px",
+}}
 >
+<h2 style={{ textAlign: "center", fontSize: "28px" }}>
+Get Missed Call Automation Setup
+</h2>
 
-        <input name="name" placeholder="Your Name" required style={inputStyle} />
-        <input name="business" placeholder="Business Name" required style={inputStyle} />
-        <input name="phone" placeholder="Phone Number" required style={inputStyle} />
-        <textarea name="message" placeholder="Tell us about your business" style={textareaStyle} />
+  <p style={{ textAlign: "center", opacity: 0.8 }}>
+    Fill out the form and we will contact you.
+  </p>
 
-        <button type="submit" style={buttonStyle}>
-          Send Request
-        </button>
+  <form
+    onSubmit={async (e) => {
+      e.preventDefault();
 
-      </form>
-    </div>
-  );
+      const form = e.target as HTMLFormElement;
+      const data = new FormData(form);
+
+      const payload = {
+        plan,
+        service: "Missed Call Text Back",
+        name: data.get("name"),
+        business: data.get("business"),
+        phone: data.get("phone"),
+        message: data.get("message"),
+      };
+
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwBOuvZvDCYoJ20D7ZxjC9tUMc3W8JIVVO0Y8TGcMicjmK1un00hd1yiluWSXFQXzAtDw/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(payload),
+        }
+      );
+
+      alert("Request sent successfully!");
+      form.reset();
+    }}
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "10px",
+      marginTop: "20px",
+    }}
+  >
+    <input
+      name="name"
+      placeholder="Your Name"
+      required
+      style={inputStyle}
+    />
+
+    <input
+      name="business"
+      placeholder="Business Name"
+      required
+      style={inputStyle}
+    />
+
+    <input
+      name="phone"
+      placeholder="Phone Number"
+      required
+      style={inputStyle}
+    />
+
+    <textarea
+      name="message"
+      placeholder="Tell us about your business"
+      style={textareaStyle}
+    />
+
+    <button type="submit" style={buttonStyle}>
+      Send Request
+    </button>
+  </form>
+</div>
+
+);
 }
 
 /* ================= STYLES ================= */
