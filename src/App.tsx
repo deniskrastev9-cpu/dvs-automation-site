@@ -6,6 +6,7 @@ import CustomerFollowUpAutomation from "./pages/CustomerFollowUpAutomation";
 import LeadCaptureAutomation from "./pages/LeadCaptureAutomation";
 import CRMAutomationSystem from "./pages/CRMAutomationSystem";
 import AiReceptionist from "./pages/AiReceptionist";
+import Pricing from "./pages/Pricing";
 
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/services/lead-capture" element={<LeadCaptureAutomation />} />
         <Route path="/services/crm-automation" element={<CRMAutomationSystem />} />
         <Route path="/services/ai-receptionist" element={<AiReceptionist />} />
+        <Route path="/pricing" element={<Pricing />} />
 
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
