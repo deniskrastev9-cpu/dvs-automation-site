@@ -26,12 +26,12 @@ export default function Pricing() {
             <li className="flex gap-2"><Check size={16} /> Email Notifications</li>
           </ul>
 
-          <a
-            href="https://buy.stripe.com/test_STARTER"
-            className="block mt-6 bg-black text-white text-center py-3 rounded-xl"
-          >
-            Start Starter
-          </a>
+          <Link
+  to="/services/lead-capture"
+  className="block text-center bg-black text-white py-3 rounded-xl font-semibold"
+>
+  Get Started
+</Link>
         </div>
 
         {/* GROWTH */}
@@ -45,12 +45,12 @@ export default function Pricing() {
             <li className="flex gap-2"><Check size={16} /> Follow-up Sequences</li>
           </ul>
 
-          <a
-            href="https://buy.stripe.com/test_GROWTH"
-            className="block mt-6 bg-black text-white text-center py-3 rounded-xl"
-          >
-            Start Growth
-          </a>
+          <Link
+  to="/services/lead-capture"
+  className="block text-center bg-black text-white py-3 rounded-xl font-semibold"
+>
+  Get Started
+</Link>
         </div>
 
         {/* PRO */}
@@ -64,12 +64,12 @@ export default function Pricing() {
             <li className="flex gap-2"><Check size={16} /> Priority Setup</li>
           </ul>
 
-          <a
-            href="https://buy.stripe.com/test_PRO"
-            className="block mt-6 bg-black text-white text-center py-3 rounded-xl"
-          >
-            Start Pro
-          </a>
+          <Link
+  to="/services/lead-capture"
+  className="block text-center bg-black text-white py-3 rounded-xl font-semibold"
+>
+  Get Started
+</Link>
         </div>
 
       </div>
