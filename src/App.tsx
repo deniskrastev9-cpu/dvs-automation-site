@@ -30,6 +30,7 @@ export default function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
       </Routes>
+      </div>
     </Router>
   );
 }
