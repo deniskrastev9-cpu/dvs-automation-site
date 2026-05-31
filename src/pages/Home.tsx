@@ -164,14 +164,15 @@ export default function Home() {
 
     <div className="border-t mt-3 pt-3">
 
-      <a
-        href="mailto:service@dvsautomationsolutionsllc.com"
-        className="block bg-black text-white text-center py-3 rounded-xl text-sm font-semibold"
-      >
-        Get a Demo
-      </a>
+  <Link
+    to="/pricing"
+    onClick={() => setMenuOpen(false)}
+    className="block bg-black text-white text-center py-3 rounded-xl text-sm font-semibold"
+  >
+    Pricing
+  </Link>
 
-    </div>
+</div>
 
   </div>
 )}
