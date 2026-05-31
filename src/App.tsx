@@ -25,13 +25,13 @@ export default function App() {
 
         {/* SERVICES */}
         <Route path="/services/missed-call-text-back" element={<MissedCallTextBack />} />
-        <Route path="/services/customer-follow-up" element={<CustomerFollowUp />} />
-        <Route path="/services/lead-capture" element={<LeadCapture />} />
+        <Route path="/services/customer-follow-up-automation" element={<CustomerFollowUpAutomation />} />
+        <Route path="/services/lead-capture-automation" element={<LeadCaptureAutomation />} />
         <Route path="/services/crm-automation" element={<CrmAutomation />} />
         <Route path="/services/ai-receptionist" element={<AiReceptionist />} />
 
         {/* LEGAL PAGES */}
-        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
 
       </Routes>
