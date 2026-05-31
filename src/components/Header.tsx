@@ -93,19 +93,19 @@ export default function Header() {
   </div>
 
   {/* OTHER NAV BUTTONS */}
-  <a
-    href="#how-it-works"
-    className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
-  >
-    How It Works
-  </a>
+  <Link
+  to="/#how-it-works"
+  className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
+>
+  How It Works
+</Link>
 
-  <a
-    href="#industries"
-    className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
-  >
-    Industries
-  </a>
+  <Link
+  to="/#industries"
+  className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
+>
+  Industries
+</Link>
 
   {/* CTA BUTTON */}
   <Link
