@@ -108,16 +108,16 @@ export default function Home() {
   </a>
 
   {/* CTA BUTTON */}
-  <a
-    href="mailto:service@dvsautomationsolutionsllc.com"
-    className="
-      bg-black text-white px-5 py-2.5 rounded-xl
-      text-sm font-semibold hover:bg-gray-800
-      transition-all shadow-sm
-    "
-  >
-    Get a Demo
-  </a>
+  <Link
+  to="/pricing"
+  className="
+    bg-black text-white px-5 py-2.5 rounded-xl
+    text-sm font-semibold hover:bg-gray-800
+    transition-all shadow-sm
+  "
+>
+  Pricing
+</Link>
 
 </nav>
 
