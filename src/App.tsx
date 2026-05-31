@@ -5,8 +5,8 @@ import Pricing from "./pages/Pricing";
 
 import MissedCallTextBack from "./pages/MissedCallTextBack";
 import CustomerFollowUpAutomation from "./pages/CustomerFollowUpAutomation";
-import LeadCapture from "./pages/LeadCapture";
-import CrmAutomation from "./pages/CrmAutomation";
+import LeadCaptureAutomation from "./pages/LeadCaptureAutomation";
+import CRMAutomation from "./pages/CRMAutomation";
 import AiReceptionist from "./pages/AiReceptionist";
 
 import Privacy from "./pages/Privacy";
