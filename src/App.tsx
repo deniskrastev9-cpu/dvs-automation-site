@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 
 import MissedCallTextBack from "./pages/MissedCallTextBack";
-import CustomerFollowUp from "./pages/CustomerFollowUp";
+import CustomerFollowUpAutomation from "./pages/CustomerFollowUpAutomation";
 import LeadCapture from "./pages/LeadCapture";
 import CrmAutomation from "./pages/CrmAutomation";
 import AiReceptionist from "./pages/AiReceptionist";
