@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Header from "./components/Header";
 import MissedCallTextBack from "./pages/MissedCallTextBack";
 import CustomerFollowUpAutomation from "./pages/CustomerFollowUpAutomation";
 import LeadCaptureAutomation from "./pages/LeadCaptureAutomation";
@@ -14,6 +15,8 @@ import Terms from "./pages/Terms";
 export default function App() {
   return (
     <Router>
+      <Header />
+      <div className="pt-20">
       <Routes>
         <Route path="/" element={<Home />} />
 
