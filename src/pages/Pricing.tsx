@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Pricing() {
   return (
@@ -27,11 +28,11 @@ export default function Pricing() {
           </ul>
 
           <Link
-  to="/services/lead-capture"
-  className="block text-center bg-black text-white py-3 rounded-xl font-semibold"
->
-  Get Started
-</Link>
+            to="/services/lead-capture"
+            className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
+          >
+            Get Started
+          </Link>
         </div>
 
         {/* GROWTH */}
@@ -46,11 +47,11 @@ export default function Pricing() {
           </ul>
 
           <Link
-  to="/services/lead-capture"
-  className="block text-center bg-black text-white py-3 rounded-xl font-semibold"
->
-  Get Started
-</Link>
+            to="/services/lead-capture"
+            className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
+          >
+            Get Started
+          </Link>
         </div>
 
         {/* PRO */}
@@ -65,11 +66,11 @@ export default function Pricing() {
           </ul>
 
           <Link
-  to="/services/lead-capture"
-  className="block text-center bg-black text-white py-3 rounded-xl font-semibold"
->
-  Get Started
-</Link>
+            to="/services/lead-capture"
+            className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
+          >
+            Get Started
+          </Link>
         </div>
 
       </div>
