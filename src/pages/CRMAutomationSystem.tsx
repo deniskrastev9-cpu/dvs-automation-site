@@ -178,16 +178,24 @@ function LeadForm() {
 const inputStyle = {
   padding: "12px",
   borderRadius: "8px",
-  border: "none",
-  outline: "none"
+  border: "1px solid #d1d5db",
+  outline: "none",
+  backgroundColor: "#ffffff",
+  color: "#111827",
+  width: "100%",
+  fontSize: "16px"
 };
 
 const textareaStyle = {
   padding: "12px",
   borderRadius: "8px",
-  border: "none",
+  border: "1px solid #d1d5db",
   outline: "none",
-  height: "100px"
+  backgroundColor: "#ffffff",
+  color: "#111827",
+  width: "100%",
+  minHeight: "120px",
+  fontSize: "16px"
 };
 
 const buttonStyle = {
