@@ -188,13 +188,14 @@ Get Missed Call Automation Setup
       const data = new FormData(form);
 
       const payload = {
-        plan:"Starter",
+        plan: "Starter",
         service: "Missed Call Text Back",
         name: data.get("name"),
         business: data.get("business"),
         phone: data.get("phone"),
         message: data.get("message"),
       };
+      console.log("SENDING PAYLOAD:",payload);
 
       await fetch(
         "https://script.google.com/macros/s/AKfycbwXMqSGZoQhOJ_I5gglGPXC3UgxXEAuQZ5Nk855S4OxpiXPXyKKGYlfDrRrPtQnaX1sEg/exec",
