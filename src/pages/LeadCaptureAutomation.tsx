@@ -198,14 +198,6 @@ const textareaStyle = {
   fontSize: "16px"
 };
 
-const textareaStyle = {
-  padding: "12px",
-  borderRadius: "8px",
-  border: "none",
-  outline: "none",
-  height: "100px"
-};
-
 const buttonStyle = {
   padding: "14px",
   borderRadius: "8px",
