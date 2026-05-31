@@ -137,16 +137,22 @@ function LeadForm() {
           const data = new FormData(form);
 
           const payload = {
-            name: data.get("name"),
-            business: data.get("business"),
-            phone: data.get("phone"),
-            message: data.get("message")
-          };
+        plan: "Starter",
+        service: "Lead Capture Automation",
+        name: data.get("name"),
+        business: data.get("business"),
+        phone: data.get("phone"),
+        message: data.get("message"),
+      };
+      console.log("SENDING PAYLOAD:",payload);
 
-          await fetch("https://script.google.com/macros/s/AKfycbwBOuvZvDCYoJ20D7ZxjC9tUMc3W8JIVVO0Y8TGcMicjmK1un00hd1yiluWSXFQXzAtDw/exec", {
-            method: "POST",
-            body: JSON.stringify(payload)
-          });
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwXMqSGZoQhOJ_I5gglGPXC3UgxXEAuQZ5Nk855S4OxpiXPXyKKGYlfDrRrPtQnaX1sEg/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(payload),
+        }
+      );
 
           alert("Request sent successfully!");
           form.reset();
