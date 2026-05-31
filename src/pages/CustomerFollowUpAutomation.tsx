@@ -1,6 +1,5 @@
 export default function CustomerFollowUpAutomation() {
-  return <div>Customer Follow Up Automation</div>;
-}
+  return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
 
       {/* HERO */}
