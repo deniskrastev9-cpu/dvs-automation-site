@@ -188,7 +188,7 @@ Get Missed Call Automation Setup
       const data = new FormData(form);
 
       const payload = {
-        plan,
+        plan:"Starter",
         service: "Missed Call Text Back",
         name: data.get("name"),
         business: data.get("business"),
