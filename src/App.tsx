@@ -9,7 +9,7 @@ import LeadCaptureAutomation from "./pages/LeadCaptureAutomation";
 import CRMAutomation from "./pages/CRMAutomation";
 import AiReceptionist from "./pages/AiReceptionist";
 
-import Privacy from "./pages/Privacy";
+import Privacy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 
 export default function App() {
