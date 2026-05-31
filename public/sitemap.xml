@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- HOME -->
   <url>
     <loc>https://www.dvsautomationsolutionsllc.com/</loc>
   </url>
+
+  <!-- PRICING -->
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/pricing</loc>
+  </url>
+
+  <!-- SERVICES -->
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/services/missed-call-text-back</loc>
+  </url>
+
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/services/customer-follow-up</loc>
+  </url>
+
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/services/lead-capture</loc>
+  </url>
+
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/services/crm-automation</loc>
+  </url>
+
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/services/ai-receptionist</loc>
+  </url>
+
+  <!-- LEGAL -->
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/privacy</loc>
+  </url>
+
+  <url>
+    <loc>https://www.dvsautomationsolutionsllc.com/terms</loc>
+  </url>
+
 </urlset>
