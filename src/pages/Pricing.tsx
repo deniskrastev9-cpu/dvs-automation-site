@@ -28,11 +28,11 @@ export default function Pricing() {
           </ul>
 
           <Link
-            to="/services/lead-capture"
-            className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
-          >
-            Get Started
-          </Link>
+  to="/services/lead-capture?plan=Starter"
+  className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
+>
+  Get Started
+</Link>
         </div>
 
         {/* GROWTH */}
@@ -47,11 +47,11 @@ export default function Pricing() {
           </ul>
 
           <Link
-            to="/services/lead-capture"
-            className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
-          >
-            Get Started
-          </Link>
+  to="/services/lead-capture?plan=Growth"
+  className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
+>
+  Get Started
+</Link>
         </div>
 
         {/* PRO */}
@@ -66,11 +66,11 @@ export default function Pricing() {
           </ul>
 
           <Link
-            to="/services/lead-capture"
-            className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
-          >
-            Get Started
-          </Link>
+  to="/services/lead-capture?plan=Pro"
+  className="block text-center bg-black text-white py-3 rounded-xl font-semibold mt-6"
+>
+  Get Started
+</Link>
         </div>
 
       </div>
