@@ -81,6 +81,13 @@ export default function Home() {
       >
         📊 CRM Automation System
       </Link>
+      
+      <Link
+  to="/services/ai-receptionist"
+  className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
+>
+  🤖 AI Receptionist
+</Link>
 
     </div>
   </div>
