@@ -161,6 +161,14 @@ export default function Home() {
     >
       📊 CRM Automation System
     </Link>
+   
+    <Link
+  className="px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium"
+  to="/services/ai-receptionist"
+  onClick={() => setMenuOpen(false)}
+>
+  🤖 AI Receptionist
+</Link>
 
     <div className="border-t mt-3 pt-3">
 
