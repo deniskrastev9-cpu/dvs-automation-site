@@ -158,98 +158,121 @@ function Step({ icon, text }: any) {
 /* ================= LEAD FORM ================= */
 
 function LeadForm() {
-const [searchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
-const plan = searchParams.get("plan") || "Starter";
+  const plan = searchParams.get("plan") || "Starter";
 
-return (
-<div
-style={{
-background: "#0f172a",
-color: "white",
-padding: "40px",
-borderRadius: "16px",
-marginTop: "40px",
-}}
->
-<h2 style={{ textAlign: "center", fontSize: "28px" }}>
-Get Missed Call Automation Setup
-</h2>
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
-  <p style={{ textAlign: "center", opacity: 0.8 }}>
-    Fill out the form and we will contact you.
-  </p>
+  return (
+    <div style={{
+      background: "#0f172a",
+      color: "white",
+      padding: "40px",
+      borderRadius: "16px",
+      marginTop: "40px"
+    }}>
 
-  <form
-    onSubmit={async (e) => {
-      e.preventDefault();
+      <h2 style={{ textAlign: "center", fontSize: "28px" }}>
+        Get Missed Call Automation Setup
+      </h2>
 
-      const form = e.target as HTMLFormElement;
-      const data = new FormData(form);
+      <p style={{ textAlign: "center", opacity: 0.8 }}>
+        Fill out the form and we will contact you.
+      </p>
 
-      const payload = {
-        plan: "Starter",
-        service: "Missed Call Text Back",
-        name: data.get("name"),
-        business: data.get("business"),
-        phone: data.get("phone"),
-        message: data.get("message"),
-      };
-      console.log("SENDING PAYLOAD:",payload);
+      <form
+        onSubmit={async (e) => {
+          e.preventDefault();
 
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbwgG0sxBkMg4KaVNjNDDIZJP6Dimm2NwPj5z83YZsD0_b8ccMKlZhvoC3fq7NiTgiC8Vw/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(payload),
-        }
-      );
+          setLoading(true);
+          setSuccess(false);
+          setError(false);
 
-      alert("Request sent successfully!");
-      form.reset();
-    }}
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      gap: "10px",
-      marginTop: "20px",
-    }}
-  >
-    <input
-      name="name"
-      placeholder="Your Name"
-      required
-      style={inputStyle}
-    />
+          const form = e.target;
+          const data = new FormData(form);
 
-    <input
-      name="business"
-      placeholder="Business Name"
-      required
-      style={inputStyle}
-    />
+          const payload = {
+            plan: plan,
+            service: "Missed Call Text Back",
+            name: data.get("name"),
+            business: data.get("business"),
+            phone: data.get("phone"),
+            message: data.get("message"),
+          };
 
-    <input
-      name="phone"
-      placeholder="Phone Number"
-      required
-      style={inputStyle}
-    />
+          try {
+            const response = await fetch(
+              "https://script.google.com/macros/s/AKfycbwgG0sxBkMg4KaVNjNDDIZJP6Dimm2NwPj5z83YZsD0_b8ccMKlZhvoC3fq7NiTgiC8Vw/exec",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
+              }
+            );
 
-    <textarea
-      name="message"
-      placeholder="Tell us about your business"
-      style={textareaStyle}
-    />
+            const result = await response.text();
+            console.log("RESPONSE:", result);
 
-    <button type="submit" style={buttonStyle}>
-      Send Request
-    </button>
-  </form>
-</div>
+            if (result.trim() === "success") {
+              setSuccess(true);
+              form.reset();
+            } else {
+              setError(true);
+            }
 
-);
+          } catch (err) {
+            setError(true);
+          }
+
+          setLoading(false);
+        }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "10px",
+          marginTop: "20px"
+        }}
+      >
+
+        <input name="name" placeholder="Your Name" required style={inputStyle} />
+        <input name="business" placeholder="Business Name" required style={inputStyle} />
+        <input name="phone" placeholder="Phone Number" required style={inputStyle} />
+        <textarea name="message" placeholder="Tell us about your business" style={textareaStyle} />
+
+        <button
+          type="submit"
+          disabled={loading}
+          style={{
+            ...buttonStyle,
+            opacity: loading ? 0.6 : 1,
+            cursor: loading ? "not-allowed" : "pointer"
+          }}
+        >
+          {loading ? "Sending..." : "Send Request"}
+        </button>
+
+        {success && (
+          <p style={{ color: "lightgreen", marginTop: "10px" }}>
+            ✅ Request sent successfully!
+          </p>
+        )}
+
+        {error && (
+          <p style={{ color: "red", marginTop: "10px" }}>
+            ⚠️ Something went wrong. Try again.
+          </p>
+        )}
+
+      </form>
+    </div>
+  );
 }
+
 
 /* ================= STYLES ================= */
 
