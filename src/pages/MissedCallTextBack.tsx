@@ -198,7 +198,7 @@ Get Missed Call Automation Setup
       console.log("SENDING PAYLOAD:",payload);
 
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwXMqSGZoQhOJ_I5gglGPXC3UgxXEAuQZ5Nk855S4OxpiXPXyKKGYlfDrRrPtQnaX1sEg/exec",
+        "https://script.google.com/macros/s/AKfycbwgG0sxBkMg4KaVNjNDDIZJP6Dimm2NwPj5z83YZsD0_b8ccMKlZhvoC3fq7NiTgiC8Vw/exec",
         {
           method: "POST",
           body: JSON.stringify(payload),
