@@ -197,20 +197,20 @@ function LeadForm() {
 
   const formData = new FormData();
 
-  formData.append("plan", "Starter");
-  formData.append("service", "Missed Call Text Back");
-  formData.append("name", String(data.get("name")));
-  formData.append("phone", String(data.get("phone")));
-  formData.append("message", String(data.get("message")));
+formData.append("plan", "Starter");
+formData.append("service", "Missed Call Text Back");
+formData.append("name", String(data.get("name")));
+formData.append("phone", String(data.get("phone")));
+formData.append("message", String(data.get("message")));
 
-  try {
-    await fetch(
-      "https://script.google.com/macros/s/AKfycbyhiLlD_h5HF9zCYK54UnjVCPU8YKnvGlE7Sff6enSW338tOfwLAqbRQp3bf3wDWXVwIQ/exec",
-      {
-        method: "POST",
-        body: formData
-      }
-    );
+await fetch(
+  "https://script.google.com/macros/s/AKfycbyhiLlD_h5HF9zCYK54UnjVCPU8YKnvGlE7Sff6enSW338tOfwLAqbRQp3bf3wDWXVwIQ/exec",
+  {
+    method: "POST",
+    body: formData,
+    mode: "no-cors"
+  }
+);
 
     setSuccess(true);
     form.reset();
