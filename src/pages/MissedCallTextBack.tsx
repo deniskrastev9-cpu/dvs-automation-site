@@ -195,8 +195,6 @@ function LeadForm() {
   const form = e.currentTarget;
   const data = new FormData(form);
 
-  const formData = new FormData();
-
 formData.append("plan", "Starter");
 formData.append("service", "Missed Call Text Back");
 formData.append("name", String(data.get("name")));
