@@ -192,7 +192,7 @@ function LeadForm() {
           setSuccess(false);
           setError(false);
 
-          const form = e.target;
+          const form = e.currentTarget;
           const data = new FormData(form);
 
           const payload = {
@@ -218,6 +218,7 @@ function LeadForm() {
 
             const result = await response.text();
             console.log("RESPONSE:", result);
+            alert(result);
 
             if (result.trim() === "success") {
               setSuccess(true);
