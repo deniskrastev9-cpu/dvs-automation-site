@@ -191,23 +191,29 @@ function LeadForm() {
   const form = e.currentTarget;
   const data = new FormData(form);
 
-  const formData = new FormData();
-
-  formData.append("plan", "Starter");
-  formData.append("service", "Missed Call Text Back");
-  formData.append("name", String(data.get("name")));
-  formData.append("phone", String(data.get("phone")));
-  formData.append("message", String(data.get("message")));
+  const payload = {
+    plan: "Starter",
+    service: "Missed Call Text Back",
+    name: String(data.get("name")),
+    phone: String(data.get("phone")),
+    message: String(data.get("message"))
+  };
 
   try {
-    await fetch(
+    const res = await fetch(
       "https://script.google.com/macros/s/AKfycbyhiLlD_h5HF9zCYK54UnjVCPU8YKnvGlE7Sff6enSW338tOfwLAqbRQp3bf3wDWXVwIQ/exec",
       {
         method: "POST",
-        body: formData,
-        mode: "no-cors"
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json"
+        }
       }
     );
+
+    const text = await res.text();
+
+    console.log("RESPONSE:", text);
 
     alert("Request sent successfully!");
     form.reset();
@@ -217,6 +223,7 @@ function LeadForm() {
     alert("Error sending request");
   }
 }}
+
         style={{
           display: "flex",
           flexDirection: "column",
