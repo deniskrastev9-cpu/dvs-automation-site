@@ -219,6 +219,7 @@ function LeadForm() {
             const result = await response.text();
             console.log("RESPONSE:", result);
             alert(result);
+            console.log(result);
 
             if (result.trim() === "success") {
               setSuccess(true);
