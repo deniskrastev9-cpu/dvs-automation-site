@@ -186,54 +186,42 @@ function LeadForm() {
 
       <form
         onSubmit={async (e) => {
-          e.preventDefault();
+  e.preventDefault();
 
-          setLoading(true);
-          setSuccess(false);
-          setError(false);
+  setLoading(true);
+  setSuccess(false);
+  setError(false);
 
-          const form = e.currentTarget;
-          const data = new FormData(form);
+  const form = e.currentTarget;
+  const data = new FormData(form);
 
-          const payload = {
-            plan: plan,
-            service: "Missed Call Text Back",
-            name: data.get("name"),
-            business: data.get("business"),
-            phone: data.get("phone"),
-            message: data.get("message"),
-          };
+  const formData = new FormData();
 
-          try {
-            const response = await fetch(
-              "https://example.com/test",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json"
-                },
-                body: JSON.stringify(payload)
-              }
-            );
+  formData.append("plan", "Starter");
+  formData.append("service", "Missed Call Text Back");
+  formData.append("name", String(data.get("name")));
+  formData.append("phone", String(data.get("phone")));
+  formData.append("message", String(data.get("message")));
 
-            const result = await response.text();
-            console.log("RESPONSE:", result);
-            alert(result);
-            console.log(result);
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbyhiLlD_h5HF9zCYK54UnjVCPU8YKnvGlE7Sff6enSW338tOfwLAqbRQp3bf3wDWXVwIQ/exec",
+      {
+        method: "POST",
+        body: formData
+      }
+    );
 
-            if (result.trim() === "success") {
-              setSuccess(true);
-              form.reset();
-            } else {
-              setError(true);
-            }
+    setSuccess(true);
+    form.reset();
 
-          } catch (err) {
-            setError(true);
-          }
+  } catch (err) {
+    console.error(err);
+    setError(true);
+  }
 
-          setLoading(false);
-        }}
+  setLoading(false);
+}}
         style={{
           display: "flex",
           flexDirection: "column",
