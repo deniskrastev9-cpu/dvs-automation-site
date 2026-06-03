@@ -312,7 +312,7 @@ const styles = {
   color: "#111827",
   WebkitTextFillColor: "#111827",
   caretColor: "#111827"
-}
+},
   button: {
     padding: "14px",
     borderRadius: "8px",
