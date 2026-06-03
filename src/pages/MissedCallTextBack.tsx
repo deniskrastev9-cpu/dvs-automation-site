@@ -160,7 +160,7 @@ function Step({ icon, text }: any) {
 
 import { useState } from "react";
 
-export default function LeadForm() {
+function LeadForm() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
