@@ -337,6 +337,7 @@ const inputStyle = {
   outline: "none",
   backgroundColor: "#ffffff",
   color: "#111827",
+  WebkitTextFillColor: "#111827", // 🔥 important fix
   width: "100%",
   fontSize: "16px"
 };
@@ -348,6 +349,7 @@ const textareaStyle = {
   outline: "none",
   backgroundColor: "#ffffff",
   color: "#111827",
+  WebkitTextFillColor: "#111827", // 🔥 important fix
   width: "100%",
   minHeight: "120px",
   fontSize: "16px"
