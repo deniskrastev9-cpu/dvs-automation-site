@@ -192,14 +192,16 @@ function LeadForm() {
         }
       );
 
-      const text = await res.text();
+      const result = await res.json();
       console.log("Response:", text);
 
-      if (text.includes("success")) {
+      if (result.status === "success") {
         setSuccess(true);
+        setError(false);
         form.reset();
       } else {
         setError(true);
+        setSuccess(false);
       }
 
     } catch (err) {
