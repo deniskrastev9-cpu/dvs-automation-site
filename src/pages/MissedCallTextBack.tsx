@@ -201,7 +201,7 @@ function LeadForm() {
 
   try {
     const res = await fetch(
-      "https://script.google.com/macros/s/AKfycbyhiLlD_h5HF9zCYK54UnjVCPU8YKnvGlE7Sff6enSW338tOfwLAqbRQp3bf3wDWXVwIQ/exec",
+      "https://script.google.com/macros/s/AKfycbxvIcZaKHNPusVo1_UH_gphgJozSDyVsDwVZxUHkOsshGw1-20pCs2TiDkaRR4obkCjlQ/exec",
       {
         method: "POST",
         body: payload
