@@ -1,3 +1,4 @@
+import LeadForm from "./components/LeadForm";
 export default function CustomerFollowUpAutomation() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
@@ -110,7 +111,10 @@ function ColorSection({ title, children, color, accent }: any) {
 }
 
 /* ================= LEAD FORM ================= */
-
+<LeadForm
+  plan="Growth"
+  service="Customer Follow Up Automation"
+  />
 function LeadForm() {
   return (
     <div style={{
