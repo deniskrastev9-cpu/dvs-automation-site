@@ -161,6 +161,17 @@ function Step({ icon, text }: any) {
 import { useState } from "react";
 
 function LeadForm() {
+  <style>{`
+  input, textarea {
+    color: #111827 !important;
+    -webkit-text-fill-color: #111827 !important;
+    background-color: #ffffff !important;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #6b7280 !important;
+  }
+`}</style>
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
