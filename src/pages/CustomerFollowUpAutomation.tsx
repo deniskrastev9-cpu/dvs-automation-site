@@ -1,4 +1,4 @@
-import LeadForm from "./components/LeadForm";
+import LeadForm from "../components/LeadForm";
 export default function CustomerFollowUpAutomation() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
