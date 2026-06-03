@@ -68,16 +68,16 @@ export default function LeadCaptureAutomation() {
             <li>Higher conversion rates</li>
           </ul>
         </ColorSection>
-
-        {/* CTA FORM (REUSABLE SYSTEM) */}
+{/* CTA FORM (REUSABLE SYSTEM) */}
         <LeadForm
-        plan="Growth"
-        service="Lead Capture Automation"
-      />
+          plan="Growth"
+          service="Lead Capture Automation"
+        />
 
-    </div>
-  );
-      }
+      </div>
+    </div>
+  );
+}
 
 /* ================= SECTION COMPONENT ================= */
 
@@ -109,5 +109,5 @@ function ColorSection({ title, children, color, accent }: any) {
         </div>
       </div>
     </div>
-  );
+ );
 }
