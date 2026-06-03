@@ -190,11 +190,12 @@ function LeadForm() {
           method: "POST",
           body: payload
         });
-      const text = (await
-                    res.text()).trim().toLowerCase();
+      const text = await res.text();
+      
       console.log("RAW RESPONSE:", text);
+      const clean = text.trim().toLowerCase();
 
-      if (text === "success") {
+      if (clean.includes("success")) {
         setSuccess(true);
         setError(false);
         form.reset();
