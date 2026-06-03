@@ -189,17 +189,17 @@ function LeadForm() {
         {
           method: "POST",
           body: payload
-        }
-      );
-
-      const result = await res.text()).trim();
+        });
+      const text = (await
+                    res.text()).trim().toLowerCase();
+      console.log("RAW RESPONSE:", text);
 
       if (text === "success") {
         setSuccess(true);
         setError(false);
         form.reset();
       } else {
-        console.log("FAILED RESPONSE:",text);
+        console.log("FAILED RESPONSE:", text);
         setError(true);
         setSuccess(false);
       }
