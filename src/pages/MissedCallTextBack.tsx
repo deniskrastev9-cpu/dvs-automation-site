@@ -193,7 +193,6 @@ function LeadForm() {
       );
 
       const result = await res.json();
-      console.log("Response:", text);
 
       if (result.status === "success") {
         setSuccess(true);
