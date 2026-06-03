@@ -78,8 +78,13 @@ return (
       Fill out the form and we will contact you within 24 hours.
     </p>
 
+    <form onSubmit={handleSubmit} style={styles.form}>
+      <input name="name" />
+    </form>
+
   </div>
 );
+  
   <p style={styles.subtitle}>
     Fill out the form and we will contact you within 24 hours.
   </p>
