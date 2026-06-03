@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import LeadForm from "./components/LeadForm";
 export default function MissedCallTextBack() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
@@ -157,7 +158,10 @@ function Step({ icon, text }: any) {
 }
 
 /* ================= LEAD FORM ================= */
-
+<LeadForm
+  plan="Starter"
+  service="Missed Call Text Back"
+  />
 import { useState } from "react";
 
 function LeadForm() {
