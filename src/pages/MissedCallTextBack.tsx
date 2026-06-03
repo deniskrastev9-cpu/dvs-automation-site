@@ -191,8 +191,7 @@ function LeadForm() {
           body: payload
         });
       const text = await res.text();
-      
-      console.log("RAW RESPONSE:", text);
+      console.log("RAW RESPONSE >>>", text);
       const clean = text.trim().toLowerCase();
 
       if (clean.includes("success")) {
