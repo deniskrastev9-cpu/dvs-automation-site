@@ -344,26 +344,32 @@ const styles = {
 const inputStyle = {
   padding: "12px",
   borderRadius: "8px",
-  border: "1px solid #d1d5db",
+  border: "none",
   outline: "none",
-  backgroundColor: "#ffffff",
-  color: "#111827",
-  WebkitTextFillColor: "#111827", // 🔥 important fix
   width: "100%",
-  fontSize: "16px"
+  fontSize: "16px",
+
+  backgroundColor: "#ffffff",
+  color: "#111827", // 🔥 visible text
+  WebkitTextFillColor: "#111827", // 🔥 fixes Chrome autofill issue
+
+  caretColor: "#111827" // 🔥 ensures cursor is visible
 };
 
 const textareaStyle = {
   padding: "12px",
   borderRadius: "8px",
-  border: "1px solid #d1d5db",
+  border: "none",
   outline: "none",
-  backgroundColor: "#ffffff",
-  color: "#111827",
-  WebkitTextFillColor: "#111827", // 🔥 important fix
   width: "100%",
-  minHeight: "120px",
-  fontSize: "16px"
+  minHeight: "100px",
+  fontSize: "16px",
+
+  backgroundColor: "#ffffff",
+  color: "#111827", // 🔥 visible text
+  WebkitTextFillColor: "#111827", // 🔥 fixes Chrome autofill issue
+
+  caretColor: "#111827" // 🔥 cursor visibility
 };
 
 const buttonStyle = {
