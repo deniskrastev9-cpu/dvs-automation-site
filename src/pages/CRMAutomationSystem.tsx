@@ -1,3 +1,4 @@
+import LeadForm from "../components/LeadForm";
 export default function CRMAutomationSystem() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
@@ -69,7 +70,10 @@ export default function CRMAutomationSystem() {
         </ColorSection>
 
         {/* CTA FORM */}
-        <LeadForm />
+        <LeadForm
+          plan="Growth"
+          service="CRM Automation System"
+        />
 
       </div>
     </div>
@@ -109,108 +113,3 @@ function ColorSection({ title, children, color, accent }: any) {
   );
 }
 
-/* ================= LEAD FORM ================= */
-
-function LeadForm() {
-  return (
-    <div style={{
-      background: "#0f172a",
-      color: "white",
-      padding: "40px",
-      borderRadius: "16px",
-      marginTop: "40px"
-    }}>
-
-      <h2 style={{ textAlign: "center", fontSize: "28px" }}>
-        Build Your CRM & Automation System
-      </h2>
-
-      <p style={{ textAlign: "center", opacity: 0.8 }}>
-        Tell us about your business and we’ll set it up.
-      </p>
-
-      <form
-        onSubmit={async (e) => {
-          e.preventDefault();
-
-          const form = e.target as HTMLFormElement;
-          const data = new FormData(form);
-
-          const payload = {
-        plan: "Growth",
-        service: "CRM and Automation System",
-        name: data.get("name"),
-        business: data.get("business"),
-        phone: data.get("phone"),
-        message: data.get("message"),
-      };
-      console.log("SENDING PAYLOAD:",payload);
-
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbwgG0sxBkMg4KaVNjNDDIZJP6Dimm2NwPj5z83YZsD0_b8ccMKlZhvoC3fq7NiTgiC8Vw/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(payload),
-        }
-      );
-
-          alert("Request sent successfully!");
-          form.reset();
-        }}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "10px",
-          marginTop: "20px"
-        }}
-      >
-
-        <input name="name" placeholder="Your Name" required style={inputStyle} />
-        <input name="business" placeholder="Business Name" required style={inputStyle} />
-        <input name="phone" placeholder="Phone Number" required style={inputStyle} />
-        <textarea name="message" placeholder="What systems do you need?" style={textareaStyle} />
-
-        <button type="submit" style={buttonStyle}>
-          Get CRM System
-        </button>
-
-      </form>
-    </div>
-  );
-}
-
-/* ================= STYLES ================= */
-
-const inputStyle = {
-  padding: "12px",
-  borderRadius: "8px",
-  border: "1px solid #d1d5db",
-  outline: "none",
-  backgroundColor: "#ffffff",
-  color: "#111827",
-  width: "100%",
-  fontSize: "16px"
-};
-
-const textareaStyle = {
-  padding: "12px",
-  borderRadius: "8px",
-  border: "1px solid #d1d5db",
-  outline: "none",
-  backgroundColor: "#ffffff",
-  color: "#111827",
-  width: "100%",
-  minHeight: "120px",
-  fontSize: "16px"
-};
-
-const buttonStyle = {
-  padding: "14px",
-  borderRadius: "8px",
-  border: "none",
-  background: "white",
-  color: "#0f172a",
-  fontWeight: "bold",
-  cursor: "pointer",
-  marginTop: "10px"
-};
