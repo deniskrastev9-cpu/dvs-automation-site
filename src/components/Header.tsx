@@ -89,8 +89,11 @@ export default function Header() {
   🤖 AI Receptionist
 </Link>
 
-      <Link to="/ai-dispatch-freight-management">
- 🚚 AI Dispatch & Freight Management
+      <Link
+  to="/ai-dispatch-freight-management"
+  className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
+>
+  🚚 AI Dispatch & Freight Management
 </Link>
 
     </div>
@@ -175,10 +178,11 @@ export default function Header() {
 </Link>
 
     <Link
+  className="px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium"
   to="/ai-dispatch-freight-management"
-  className="block px-4 py-3 text-gray-700 hover:bg-gray-100"
+  onClick={() => setMenuOpen(false)}
 >
- 🚚 AI Dispatch & Freight Management
+  🚚 AI Dispatch & Freight Management
 </Link>
 
     <div className="border-t mt-3 pt-3">
