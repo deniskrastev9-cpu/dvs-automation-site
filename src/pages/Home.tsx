@@ -417,9 +417,13 @@ export default function Home() {
           </div>
 
           <LeadForm
-            plan="First Month Free"
-            service="Homepage Lead - First Month Free"
-          />
+            plan={selectedOffer}
+            service={
+              selectedOffer === "First Month Free"
+              ? "Homepage First Month Free Offer"
+              : "Homepage Free Consultation"
+            }
+            />
         </section>
       </main>
 
