@@ -194,12 +194,12 @@ export default function Pricing() {
           Start with a consultation. We’ll review your business process and recommend the right automation package and setup level.
         </p>
 
-        <Link
-          to="/"
-          className="inline-block bg-black text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition"
-        >
-          Request a Free Consultation
-        </Link>
+        <a
+  href="/#contact"
+  className="inline-block bg-black text-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-800 transition"
+>
+  Request a Free Consultation
+</a>
       </div>
 
     </div>
