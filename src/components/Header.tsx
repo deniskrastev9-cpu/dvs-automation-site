@@ -174,6 +174,13 @@ export default function Header() {
   🤖 AI Receptionist
 </Link>
 
+    <Link
+  to="/ai-dispatch-freight-management"
+  className="block px-4 py-3 text-gray-700 hover:bg-gray-100"
+>
+ 🚚 AI Dispatch & Freight Management
+</Link>
+
     <div className="border-t mt-3 pt-3">
 
   <Link
