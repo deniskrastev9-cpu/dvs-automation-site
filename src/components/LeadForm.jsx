@@ -70,9 +70,11 @@ setTimeout(() => {
 return (
   <div style={styles.wrapper}>
 
-    <h2>
-      Get {service || "Automation"} Setup
-    </h2>
+    <h2 style={styles.title}>
+  {service?.includes("Homepage Lead")
+    ? "Request Your Free Automation Consultation"
+    : `Get ${service || "Automation"} Setup`}
+</h2>
 
     <p style={styles.subtitle}>
     Fill out the form and we will contact you within 24 hours.
