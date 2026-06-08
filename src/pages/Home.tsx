@@ -59,7 +59,10 @@ export default function Home() {
 
               <a
                 href="#contact"
-                onClick={() => setShowOffer(false)}
+                onClick={() => {
+                  setSelectedOffer("First Month Free");
+                  setShowOffer(false);
+                }}
                 className="inline-block bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition"
               >
                 Claim Free Month
