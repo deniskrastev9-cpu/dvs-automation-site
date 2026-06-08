@@ -89,6 +89,10 @@ export default function Header() {
   🤖 AI Receptionist
 </Link>
 
+      <Link to="/ai-dispatch-freight-management">
+ 🚚 AI Dispatch & Freight Management
+</Link>
+
     </div>
   </div>
 
