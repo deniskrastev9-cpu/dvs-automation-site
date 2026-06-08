@@ -20,6 +20,7 @@ import LeadForm from "../components/LeadForm";
 
 export default function Home() {
   const [showOffer, setShowOffer] = useState(false);
+  const [selectedOffer, setSelectedOffer] = useState("Free Consultation");
 
   useEffect(() => {
     const timer = setTimeout(() => {
