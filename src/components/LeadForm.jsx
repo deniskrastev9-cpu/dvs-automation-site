@@ -71,9 +71,11 @@ return (
   <div style={styles.wrapper}>
 
     <h2 style={styles.title}>
-  {service?.includes("Homepage Lead")
-    ? "Request Your Free Automation Consultation"
-    : `Get ${service || "Automation"} Setup`}
+  {service?.includes("Homepage")
+  ? plan === "First Month Free"
+    ? "Claim Your First Month Free"
+    : "Request Your Free Automation Consultation"
+  : `Get ${service || "Automation"} Setup`}
 </h2>
 
     <p style={styles.subtitle}>
