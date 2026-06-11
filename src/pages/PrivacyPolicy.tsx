@@ -134,7 +134,23 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">12. Contact Us</h2>
+  <h2 className="text-2xl font-bold mb-4 text-gray-900">12. SMS Communications</h2>
+  <p>
+    If you provide your phone number and consent to receive SMS communications from DVS Automation Solutions LLC, we may send you messages related to appointment scheduling, customer support, service updates, consultation confirmations, missed call responses, and other communications related to services you have requested.
+  </p>
+  <p className="mt-4">
+    SMS consent is not shared with third parties or affiliates for marketing purposes.
+  </p>
+  <p className="mt-4">
+    Message frequency varies based on your interaction with our services. Message and data rates may apply. You may opt out at any time by replying STOP to any message. For assistance, reply HELP or contact us at{" "}
+    <a href="mailto:service@dvsautomationsolutionsllc.com" className="text-blue-600 hover:underline">
+      service@dvsautomationsolutionsllc.com
+    </a>.
+  </p>
+</section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">13. Contact Us</h2>
             <p>
               If you have questions about this Privacy Policy or our privacy practices, please contact us at:
             </p>
