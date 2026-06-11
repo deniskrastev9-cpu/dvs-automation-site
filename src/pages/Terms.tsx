@@ -88,18 +88,54 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900">9. Service Description</h2>
             <p>
-              DVS Automation Solutions LLC provides automated business communication and lead qualification services designed for local service businesses. Our services include:
+              DVS Automation Solutions LLC provides business automation and customer communication solutions designed to help businesses improve responsiveness, customer engagement, and operational efficiency. Services may include:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Automated missed call text-back responses</li>
-              <li>Lead qualification and data collection</li>
+              <li>Automated missed-call text-back responses</li>
+              <li>AI-powered receptionist and customer support solutions</li>
               <li>Customer communication automation</li>
-              <li>Appointment booking assistance</li>
+              <li>Appointment scheduling and confirmation assistance</li>
+              <li>CRM and workflow automation</li>
+              <li>Business process automation</li>
+              <li>AI Dispatch & Freight Management solutions for transportation and logistics companies</li>
+              <li>Customer inquiry management and service updates</li>
+              <li>Custom automation solutions tailored to business operations</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">10. User Responsibilities</h2>
+  <h2 className="text-2xl font-bold mb-4 text-gray-900">
+    10. SMS Terms and Conditions
+  </h2>
+
+  <p>
+    By providing your phone number and consenting to receive SMS messages from DVS Automation Solutions LLC, you agree to receive messages related to customer support, appointment scheduling, consultation confirmations, service updates, and missed call responses.
+  </p>
+
+  <p className="mt-4">
+    Message frequency varies.
+  </p>
+
+  <p className="mt-4">
+    Message and data rates may apply.
+  </p>
+
+  <p className="mt-4">
+    You may opt out of receiving SMS messages at any time by replying STOP to any message.
+  </p>
+
+  <p className="mt-4">
+    For assistance, reply HELP or contact us at service@dvsautomationsolutionsllc.com.
+  </p>
+
+  <p className="mt-4">
+    Consent to receive SMS messages is not a condition of purchase.
+  </p>
+</section>
+
+
+          <section>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">11. User Responsibilities</h2>
             <p>
               Users agree to use our Services only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of our Services. Prohibited behavior includes:
             </p>
@@ -112,35 +148,35 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">11. Intellectual Property Rights</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">12. Intellectual Property Rights</h2>
             <p>
               All materials on our website, including text, graphics, logos, images, and software, are the property of DVS Automation Solutions LLC or its content suppliers and are protected by international copyright laws. You may not reproduce, distribute, or transmit any content without our prior written permission.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">12. Service Availability</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">13. Service Availability</h2>
             <p>
               While we strive to provide reliable services, we do not guarantee that our Services will be available at all times. We reserve the right to suspend or discontinue Services at any time, with or without notice, for maintenance, updates, or any other reason at our sole discretion.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">13. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">14. Limitation of Liability</h2>
             <p>
               To the fullest extent allowed by law, DVS Automation Solutions LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the Services, even if we have been advised of the possibility of such damages.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">14. Indemnification</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">15. Indemnification</h2>
             <p>
               You agree to indemnify and hold harmless DVS Automation Solutions LLC, its officers, directors, employees, and agents from any claim, demand, loss, or damage arising out of your use of our Services or your violation of these Terms of Service.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">15. Contact Information</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">16. Contact Information</h2>
             <p>
               If you have any questions about these Terms of Service, please contact us at:
             </p>
