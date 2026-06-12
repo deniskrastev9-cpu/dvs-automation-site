@@ -54,7 +54,7 @@ export default function Home() {
               </h2>
 
               <p className="text-gray-600 mb-6">
-                Try our lead customer inquiry automation, missed-call follow-up, and business automation system free for your first month.
+                Try our customer inquiry automation, missed-call follow-up, and business automation system free for your first month.
               </p>
 
               <a
