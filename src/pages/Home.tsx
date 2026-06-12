@@ -244,7 +244,7 @@ export default function Home() {
         </section>
 
         {/* SERVICES */}
-        <section id="services" className="py-24 px-6 bg-gray-50">
+        <section id="services" className="py-24 px-6 bg-gradient-to-b from-slate-50 to-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-3">
@@ -336,7 +336,7 @@ export default function Home() {
         </section>
 
         {/* INDUSTRIES */}
-        <section id="industries" className="py-20 px-6 bg-gray-50 border-y border-gray-200">
+        <section id="industries" className="py-20 px-6 bg-gradient-to-b from-white to-slate-50 border-y border-slate-200">
           <div className="max-w-5xl mx-auto text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-3">
               Industries We Help
@@ -416,9 +416,9 @@ export default function Home() {
         </section>
 
         {/* CONTACT / LEAD FORM */}
-        <section id="contact" className="py-24 px-6 bg-gray-50">
+        <section id="contact" className="py-24 px-6 bg-gradient-to-br from-slate-900 to-gray-950 text-white">
           <div className="max-w-4xl mx-auto text-center mb-10">
-            <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-4">
+            <p className="text-sm font-semibold uppercase tracking-widest text-blue-300 mb-4">
               First Month Free
             </p>
 
@@ -426,7 +426,7 @@ export default function Home() {
               See What Automation Can Fix in Your Business
             </h2>
 
-            <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Tell us what you need help with and we’ll contact you about your free first month offer.
             </p>
           </div>
