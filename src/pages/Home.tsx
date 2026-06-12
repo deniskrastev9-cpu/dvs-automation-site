@@ -75,7 +75,6 @@ export default function Home() {
       <main>
         {/* Hero */}
 <section className="pt-36 pb-24 px-6 relative overflow-hidden bg-gray-950 text-white">
-
   {/* Background Effects */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#2563eb,transparent_35%),radial-gradient(circle_at_top_right,#22c55e,transparent_30%),linear-gradient(135deg,#020617,#111827)]"></div>
 
@@ -90,11 +89,10 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-
+  <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center pt-24 md:pt-10">
     <div>
       <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur">
-        <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+        <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
         AI Automation for Local Businesses
       </div>
 
@@ -102,44 +100,37 @@ export default function Home() {
         Never Miss Customer Inquiries. Respond Faster. Book More Jobs.
       </h1>
 
-      <p className="text-xl text-gray-300 mb-10 leading-relaxed">
+      <p className="text-base md:text-xl text-gray-300 mb-10 leading-relaxed">
         DVS Automation Solutions helps service businesses automate missed-call follow-up, customer inquiry automation, AI receptionist workflows, CRM automation, customer follow-up, and AI dispatch systems.
       </p>
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="#contact"
-                  className="group bg-black text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center gap-2"
-                >
-                  Claim First Month Free
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </a>
 
-                <a href="#services"
-                  className="border border-gray-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-50 transition-colors text-gray-700">
-                  <div className="flex flex-col sm:flex-row gap-4">
-                <a href="#contact"
-                  className="group bg-black text-white px-7 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2">
-     Claim First Month Free
-    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-  </a>
-</div>
+      <div className="flex flex-col sm:flex-row gap-4">
+        <a
+          href="#contact"
+          className="group bg-black text-white px-7 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2"
+        >
+          Claim First Month Free
+          <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
 
-<div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-300">
-  <div className="flex items-center gap-2">
-    <CheckCircle size={16} className="text-blue-400" />
-    First month free
-  </div>
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-300">
+        <div className="flex items-center gap-2">
+          <CheckCircle size={16} className="text-blue-400" />
+          First month free
+        </div>
 
-  <div className="flex items-center gap-2">
-    <CheckCircle size={16} className="text-blue-400" />
-    Fast setup
-  </div>
+        <div className="flex items-center gap-2">
+          <CheckCircle size={16} className="text-blue-400" />
+          Fast setup
+        </div>
 
-  <div className="flex items-center gap-2">
-    <CheckCircle size={16} className="text-blue-400" />
-    24/7 automation
-  </div>
-</div>
+        <div className="flex items-center gap-2">
+          <CheckCircle size={16} className="text-blue-400" />
+          24/7 automation
+        </div>
+      </div>
+    </div>
 
             {/* DEMO CARD */}
             <div className="relative">
