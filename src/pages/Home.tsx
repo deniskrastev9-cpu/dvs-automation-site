@@ -118,25 +118,32 @@ export default function Home() {
                   href="#services"
                   className="border border-gray-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-50 transition-colors text-gray-700"
                 >
-                  Explore Solutions
-                </a>
-              </div>
+                  <div className="flex flex-col sm:flex-row gap-4">
+  <a
+    href="#contact"
+    className="group bg-black text-white px-7 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2"
+  >
+    Claim First Month Free
+    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+  </a>
+</div>
 
-              <div className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white border border-white/20 rounded-2xl font-semibold backdrop-blur hover:bg-white/20 transition-all">
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle size={15} className="text-blue-400" />
-                  First month free
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle size={15} className="text-blue-400" />
-                  Setup available fast
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle size={15} className="text-blue-400" />
-                  24/7 automation
-                </div>
-              </div>
-            </div>
+<div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-300">
+  <div className="flex items-center gap-2">
+    <CheckCircle size={16} className="text-blue-400" />
+    First month free
+  </div>
+
+  <div className="flex items-center gap-2">
+    <CheckCircle size={16} className="text-blue-400" />
+    Fast setup
+  </div>
+
+  <div className="flex items-center gap-2">
+    <CheckCircle size={16} className="text-blue-400" />
+    24/7 automation
+  </div>
+</div>
 
             {/* DEMO CARD */}
             <div className="relative">
