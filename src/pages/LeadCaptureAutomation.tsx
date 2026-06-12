@@ -12,7 +12,7 @@ export default function LeadCaptureAutomation() {
       }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <h1 style={{ fontSize: "48px", marginBottom: "15px" }}>
-            Turn Website Visitors Into Real Customer Inquiry Automatically
+            Turn Website Visitors Into Real Customers Inquiries Automatically
           </h1>
 
           <p style={{ fontSize: "20px", opacity: 0.9 }}>
