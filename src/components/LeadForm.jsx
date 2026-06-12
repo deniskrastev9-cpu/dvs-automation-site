@@ -102,7 +102,25 @@ return (
       placeholder="Tell us about your business"
       style={styles.textarea}
     />
+<div className="flex items-start gap-3 mt-4 mb-4">
+  <input
+    type="checkbox"
+    required
+    id="smsConsent"
+    className="mt-1 w-4 h-4"
+  />
 
+  <label
+    htmlFor="smsConsent"
+    className="text-sm text-gray-300 leading-relaxed"
+  >
+    I agree to receive SMS messages from DVS Automation Solutions LLC
+    regarding my inquiry, requested services, appointment scheduling,
+    and customer support. Message frequency varies. Message and data
+    rates may apply. Reply STOP to opt out and HELP for assistance.
+  </label>
+</div>
+    
     <button
       type="submit"
       disabled={loading}
