@@ -122,17 +122,17 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-gray-500">
+              <div className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white border border-white/20 rounded-2xl font-semibold backdrop-blur hover:bg-white/20 transition-all">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle size={15} className="text-green-500" />
+                  <CheckCircle size={15} className="text-blue-400" />
                   First month free
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle size={15} className="text-green-500" />
+                  <CheckCircle size={15} className="text-blue-400" />
                   Setup available fast
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle size={15} className="text-green-500" />
+                  <CheckCircle size={15} className="text-blue-400" />
                   24/7 automation
                 </div>
               </div>
