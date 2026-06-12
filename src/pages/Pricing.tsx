@@ -27,7 +27,7 @@ export default function Pricing() {
           <div className="mb-6">
             <h2 className="text-xl font-bold">Starter</h2>
             <p className="text-gray-500 text-sm mt-2">
-              Best for simple missed-call recovery and basic lead capture.
+              Best for simple missed-call recovery and basic customer inquiry automation.
             </p>
 
             <p className="text-3xl font-bold mt-5">
@@ -39,14 +39,14 @@ export default function Pricing() {
                 Setup Fee: Custom
               </p>
               <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                Setup depends on your phone system, lead flow, and required connection.
+                Setup depends on your phone system, customer inquiry flow, and required connection.
               </p>
             </div>
           </div>
 
           <ul className="space-y-3 text-sm text-gray-600 flex-1">
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Missed Call Text Back</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Basic Lead Capture</li>
+            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Basic Customer Inquiry Automation</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Email Notifications</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Google Sheets Lead Logging</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Basic SMS Follow-Up</li>
@@ -69,7 +69,7 @@ export default function Pricing() {
           <div className="mb-6">
             <h2 className="text-xl font-bold">Growth</h2>
             <p className="text-gray-500 text-sm mt-2">
-              Best for businesses that want better lead capture, follow-up, and CRM automation.
+              Best for businesses that want better customer inquiry automation, follow-up, and CRM automation.
             </p>
 
             <p className="text-3xl font-bold mt-5">
@@ -88,11 +88,11 @@ export default function Pricing() {
 
           <ul className="space-y-3 text-sm text-gray-600 flex-1">
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Everything in Starter</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Lead Capture Automation</li>
+            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Customer Inquiry Automation</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Customer Follow-Up Automation</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> CRM Automation</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Appointment Reminders</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Lead Tracking System</li>
+            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Customer Inquiry Tracking System</li>
           </ul>
 
           <Link
@@ -169,7 +169,7 @@ export default function Pricing() {
             },
             {
               title: "Custom Workflow Setup",
-              text: "Lead capture, follow-up sequences, CRM automation, appointment reminders, and integrations."
+              text: "Customer inquiry automation, follow-up sequences, CRM automation, appointment reminders, and integrations."
             },
             {
               title: "Advanced AI Setup",
