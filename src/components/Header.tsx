@@ -3,140 +3,126 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const closeMenu = () => setMenuOpen(false);
+  const closeMenu = () => setMenuOpen(false);
 
-  return (
-    <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-  scrolled
-    ? "bg-gray-950/95 border-b border-white/10 shadow-sm backdrop-blur"
-    : "bg-gray-950"
-}`}
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-9 h-9 bg-black rounded-xl flex items-center justify-center">
-              <img
-  src="/logo2.png"
-  alt="DVS Logo"
-  style={{ width: '40px', height: '40px' }}
-/>
-            </div>
-            <div>
-              <span className="font-bold text-lg leading-none block text-white">DVS Automation</span>
-<span className="text-xs text-gray-400 leading-none">Solutions LLC</span>
-            </div>
-          </Link>
+  const desktopLink =
+    "px-4 py-2 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition";
 
-          <nav className="hidden md:flex items-center gap-6">
+  const dropdownLink =
+    "block px-5 py-3 hover:bg-gray-50 text-sm font-medium text-gray-700 hover:text-black transition";
 
-  {/* SERVICES DROPDOWN */}
-  <div className="relative group">
+  const mobileLink =
+    "px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium text-gray-800 transition";
 
-    <button className="
-      px-4 py-2 rounded-xl text-sm font-semibold
-      text-gray-700 hover:text-black hover:bg-gray-100
-      transition-all flex items-center gap-2
-    ">
-      Services
-      <span className="text-xs">▼</span>
-    </button>
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-gray-950/95 border-b border-white/10 shadow-lg backdrop-blur"
+          : "bg-gray-950 border-b border-white/10"
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <Link
+          to="/"
+          onClick={closeMenu}
+          className="flex items-center gap-3 hover:opacity-90 transition-opacity"
+        >
+          <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center overflow-hidden border border-white/10">
+            <img
+              src="/logo2.png"
+              alt="DVS Logo"
+              className="w-10 h-10 object-contain"
+            />
+          </div>
 
-    {/* DROPDOWN */}
-    <div className="
-      absolute top-12 left-0 w-72
-      bg-white border border-gray-100
-      shadow-xl rounded-2xl
-      opacity-0 invisible group-hover:opacity-100 group-hover:visible
-      transition-all duration-200 z-50 overflow-hidden
-    ">
+          <div>
+            <span className="font-bold text-lg leading-none block text-white">
+              DVS Automation
+            </span>
+            <span className="text-xs text-gray-400 leading-none">
+              Solutions LLC
+            </span>
+          </div>
+        </Link>
 
-      <Link to="/services/missed-call-text-back"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
-      >
-        📞 Missed Call Text Back
-      </Link>
+        <nav className="hidden md:flex items-center gap-4">
+          <div className="relative group">
+            <button className="px-4 py-2 rounded-xl text-sm font-semibold text-white hover:bg-white/10 transition-all flex items-center gap-2">
+              Services
+              <span className="text-xs">▼</span>
+            </button>
 
-      <Link to="/services/customer-follow-up"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
-      >
-        💬 Customer Follow-Up Automation
-      </Link>
+            <div className="absolute top-12 left-0 w-80 bg-white border border-gray-100 shadow-2xl rounded-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+              <Link
+                to="/services/missed-call-text-back"
+                className={dropdownLink}
+              >
+                📞 Missed Call Text Back
+              </Link>
 
-      <Link to="/services/lead-capture"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
-      >
-        🧲 Customer Inquiry Automation
-      </Link>
+              <Link
+                to="/services/customer-follow-up"
+                className={dropdownLink}
+              >
+                💬 Customer Follow-Up Automation
+              </Link>
 
-      <Link to="/services/crm-automation"
-        className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
-      >
-        📊 CRM Automation System
-      </Link>
-     
-      <Link
-  to="/services/ai-receptionist"
-  className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
->
-  🤖 AI Receptionist
-</Link>
+              <Link to="/services/lead-capture" className={dropdownLink}>
+                🧲 Customer Inquiry Automation
+              </Link>
 
-      <Link
-  to="/ai-dispatch-freight-management"
-  className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
->
-  🚚 AI Dispatch & Freight Management
-</Link>
+              <Link to="/services/crm-automation" className={dropdownLink}>
+                📊 CRM Automation System
+              </Link>
 
-    </div>
-  </div>
+              <Link to="/services/ai-receptionist" className={dropdownLink}>
+                🤖 AI Receptionist
+              </Link>
 
-  {/* OTHER NAV BUTTONS */}
-  <Link
-  to="/#how-it-works"
-  className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
->
-  How It Works
-</Link>
+              <Link
+                to="/ai-dispatch-freight-management"
+                className={dropdownLink}
+              >
+                🚚 AI Dispatch & Freight Management
+              </Link>
+            </div>
+          </div>
 
-  <Link
-  to="/#industries"
-  className="px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:bg-gray-100 transition"
->
-  Industries
-</Link>
+          <Link to="/#how-it-works" className={desktopLink}>
+            How It Works
+          </Link>
 
-  {/* CTA BUTTON */}
-  <Link
-  to="/pricing"
-  className="
-    bg-black text-white px-5 py-2.5 rounded-xl
-    text-sm font-semibold hover:bg-gray-800
-    transition-all shadow-sm
-  "
->
-  Pricing
-</Link>
+          <Link to="/#industries" className={desktopLink}>
+            Industries
+          </Link>
 
-</nav>
+          <Link
+            to="/pricing"
+            className="bg-white text-black px-5 py-2.5 rounded-xl text-sm font-semibold hover:bg-gray-100 transition-all shadow-sm"
+          >
+            Pricing
+          </Link>
+        </nav>
 
-          <button
-            className="md:hidden p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <X size={20} /> : <Menu size={20} />}
-          </button>
-        </div>
+        <button
+          className="md:hidden p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </div>
+
 
         {menuOpen && (
   <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-2">
