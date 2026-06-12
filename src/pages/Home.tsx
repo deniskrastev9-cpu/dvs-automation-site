@@ -84,7 +84,7 @@ export default function Home() {
   <div className="absolute bottom-16 left-1/3 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
 
   {/* Top Banner */}
-  <div className="absolute top-24 left-0 right-0 text-center">
+  <div className="absolute top-16 md:top-24 left-0 right-0 text-center">
     <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold backdrop-blur">
       ⚡ AI Receptionist • Missed Call Text Back • Customer Communication Automation
     </div>
