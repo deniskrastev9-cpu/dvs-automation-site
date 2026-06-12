@@ -73,42 +73,38 @@ export default function Home() {
       )}
 
       <main>
-        {/* HERO */}
-       <section className="pt-36 pb-24 px-6 relative overflow-hidden bg-gray-950 text-white">
+        {/* Hero */}
+<section className="pt-36 pb-24 px-6 relative overflow-hidden bg-gray-950 text-white">
 
+  {/* Background Effects */}
   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#2563eb,transparent_35%),radial-gradient(circle_at_top_right,#22c55e,transparent_30%),linear-gradient(135deg,#020617,#111827)]"></div>
 
   <div className="absolute top-24 left-10 w-32 h-32 border border-white/10 rounded-full animate-pulse"></div>
   <div className="absolute top-40 right-16 w-44 h-44 border border-white/10 rounded-full animate-pulse"></div>
   <div className="absolute bottom-16 left-1/3 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
 
+  {/* Top Banner */}
   <div className="absolute top-24 left-0 right-0 text-center">
     <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold backdrop-blur">
       ⚡ AI Receptionist • Missed Call Text Back • Customer Communication Automation
     </div>
   </div>
 
-  <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center"> 
-         <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-blue-100 rounded-full blur-3xl opacity-40"></div>
-         <div className="absolute top-28 right-10 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-40"></div>
-         <div className="absolute top-32 left-10 w-72 h-72 bg-gray-200 rounded-full blur-3xl opacity-40"></div>
+  <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-         <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-          
-            <div>
-              <div className="inline-flex items-center gap-2 bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                AI Automation for Local Businesses
-              </div>
+    <div>
+      <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur">
+        <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+        AI Automation for Local Businesses
+      </div>
 
-              <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
-                Never Miss Customer Inquiries. Respond Faster. Book More Jobs.
-              </h1>
+      <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
+        Never Miss Customer Inquiries. Respond Faster. Book More Jobs.
+      </h1>
 
-              <p className="text-xl text-gray-500 mb-10 leading-relaxed">
-                DVS Automation Solutions helps service businesses automate missed-call follow-up, customer inquiry automation, AI receptionist workflows, CRM automation, customer follow-up, and AI dispatch systems.
-              </p>
-
+      <p className="text-xl text-gray-300 mb-10 leading-relaxed">
+        DVS Automation Solutions helps service businesses automate missed-call follow-up, customer inquiry automation, AI receptionist workflows, CRM automation, customer follow-up, and AI dispatch systems.
+      </p>
               <div className="flex flex-wrap gap-4">
                 <a
                   href="#contact"
