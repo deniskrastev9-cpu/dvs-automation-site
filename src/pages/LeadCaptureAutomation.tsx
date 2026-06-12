@@ -12,11 +12,11 @@ export default function LeadCaptureAutomation() {
       }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <h1 style={{ fontSize: "48px", marginBottom: "15px" }}>
-            Turn Website Visitors Into Real Leads Automatically
+            Turn Website Visitors Into Real Customer Inquiry Automatically
           </h1>
 
           <p style={{ fontSize: "20px", opacity: 0.9 }}>
-            We build automated lead capture systems that send every inquiry directly
+            We build customer inquiry automation that send every inquiry directly
             to your inbox, CRM, or Google Sheets instantly.
           </p>
         </div>
@@ -31,12 +31,12 @@ export default function LeadCaptureAutomation() {
 
         {/* WHY */}
         <ColorSection
-          title="Why Lead Capture Matters"
+          title="Why Customer Inquiry Automation Matters"
           color="#eef2ff"
           accent="#1e3a8a"
         >
           Most websites lose 90% of visitors because there is no proper system
-          to capture and track leads effectively.
+          to capture and track customer inquiries effectively.
         </ColorSection>
 
         {/* HOW IT WORKS */}
@@ -61,8 +61,8 @@ export default function LeadCaptureAutomation() {
           accent="#166534"
         >
           <ul style={{ lineHeight: "2" }}>
-            <li>Never lose a website lead again</li>
-            <li>Instant lead tracking system</li>
+            <li>Never lose a website customer inquiry again</li>
+            <li>Instant inquiry tracking system</li>
             <li>Works with any website</li>
             <li>Simple, automated workflow</li>
             <li>Higher conversion rates</li>
