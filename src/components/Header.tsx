@@ -73,7 +73,7 @@ export default function Header() {
       <Link to="/services/lead-capture"
         className="block px-5 py-3 hover:bg-gray-50 text-sm font-medium"
       >
-        🧲 Lead Capture Automation
+        🧲 Customer Inquiry Automation
       </Link>
 
       <Link to="/services/crm-automation"
@@ -159,7 +159,7 @@ export default function Header() {
       to="/services/lead-capture"
       onClick={() => setMenuOpen(false)}
     >
-      🧲 Lead Capture Automation
+      🧲 Customer Inquiry Automation
     </Link>
 
     <Link className="px-3 py-2 rounded-lg hover:bg-gray-100 text-sm font-medium"
