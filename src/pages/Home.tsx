@@ -54,7 +54,7 @@ export default function Home() {
               </h2>
 
               <p className="text-gray-600 mb-6">
-                Try our lead capture, missed-call follow-up, and business automation system free for your first month.
+                Try our lead customer inquiry automation, missed-call follow-up, and business automation system free for your first month.
               </p>
 
               <a
@@ -83,11 +83,11 @@ export default function Home() {
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
-                Capture More Leads. Respond Faster. Book More Jobs.
+                Never Miss Customer Inquiries. Respond Faster. Book More Jobs.
               </h1>
 
               <p className="text-xl text-gray-500 mb-10 leading-relaxed">
-                DVS Automation Solutions helps service businesses automate missed-call follow-up, lead capture, AI receptionist workflows, CRM automation, customer follow-up, and AI dispatch systems.
+                DVS Automation Solutions helps service businesses automate missed-call follow-up, customer inquiry automation, AI receptionist workflows, CRM automation, customer follow-up, and AI dispatch systems.
               </p>
 
               <div className="flex flex-wrap gap-4">
@@ -166,7 +166,7 @@ export default function Home() {
                   <div className="bg-green-50 border border-green-100 rounded-2xl px-4 py-3 text-sm flex items-center gap-2 mt-2">
                     <CheckCircle size={15} className="text-green-500 flex-shrink-0" />
                     <span className="text-green-700 font-medium">
-                      Lead captured and ready for follow-up
+                      Customer inquiry received and ready for follow-up
                     </span>
                   </div>
                 </div>
@@ -200,7 +200,7 @@ export default function Home() {
                 Problems We Solve
               </p>
               <h2 className="text-4xl md:text-5xl font-bold mb-4">
-                Leads Are Expensive. Losing Them Shouldn’t Be Normal.
+                Customer Inquiries Are Expensive. Losing Them Shouldn’t Be Normal.
               </h2>
               <p className="text-lg text-gray-500 max-w-2xl mx-auto">
                 Most local businesses lose opportunities because calls are missed, follow-up is slow, or customer information is not organized.
@@ -211,7 +211,7 @@ export default function Home() {
               {[
                 "Missed calls during busy hours",
                 "After-hours inquiries going unanswered",
-                "Leads not followed up fast enough",
+                "Customers inquiries not followed up fast enough",
                 "Customers choosing competitors first",
                 "Manual CRM and customer tracking",
                 "Dispatch and communication delays",
@@ -258,8 +258,8 @@ export default function Home() {
 
               <ServiceCard
                 icon={<ClipboardList size={22} />}
-                title="Lead Capture Automation"
-                desc="Collect leads from forms, calls, and messages and send them directly to your sheet or CRM."
+                title="Customer Inquiry Automation"
+                desc="Collect customer inquiries from forms, calls, and messages and send them directly to your sheet or CRM."
               />
 
               <ServiceCard
@@ -302,19 +302,19 @@ export default function Home() {
               <StepCard
                 step="01"
                 title="We Review Your Process"
-                desc="We look at how calls, leads, messages, and follow-ups currently work in your business."
+                desc="We look at how calls, customer inquiries, messages, and follow-ups currently work in your business."
               />
 
               <StepCard
                 step="02"
                 title="We Build the Automation"
-                desc="We create the messaging, lead capture, CRM, receptionist, or dispatch workflow your business needs."
+                desc="We create the messaging, customer inquiry automation, CRM, receptionist, or dispatch workflow your business needs."
               />
 
               <StepCard
                 step="03"
                 title="You Capture More Opportunities"
-                desc="Your system starts responding faster, tracking leads, and helping turn inquiries into booked jobs."
+                desc="Your system starts responding faster, tracking customer inquiries, and helping turn them into booked jobs."
               />
             </div>
           </div>
@@ -374,7 +374,7 @@ export default function Home() {
             <div className="space-y-4">
               <FAQ
                 question="What does DVS Automation Solutions do?"
-                answer="We build automation systems that help businesses capture leads, respond faster, follow up with customers, organize CRM data, and reduce manual work."
+                answer="We build automation systems that help businesses never miss customer inquiries, respond faster, follow up with customers, organize CRM data, and reduce manual work."
               />
 
               <FAQ
@@ -384,7 +384,7 @@ export default function Home() {
 
               <FAQ
                 question="Can this help me get more customers?"
-                answer="Automation helps businesses respond faster, capture more opportunities, and follow up better. For many businesses, this means more leads turning into booked jobs."
+                answer="Automation helps businesses respond faster, capture more opportunities, and follow up better. For many businesses, this means more customer inquiries turning into booked jobs."
               />
 
               <FAQ
@@ -454,7 +454,7 @@ export default function Home() {
             </div>
 
             <p className="text-xs text-gray-500">
-              Helping businesses capture more leads, respond faster, and book more jobs with automation.
+              Helping businesses never miss customer inquiries, respond faster, and book more jobs with automation.
             </p>
           </div>
 
