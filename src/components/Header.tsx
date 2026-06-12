@@ -17,8 +17,10 @@ export default function Header() {
   return (
     <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-white border-b border-gray-200 shadow-sm' : 'bg-transparent'
-        }`}
+  scrolled
+    ? "bg-gray-950/95 border-b border-white/10 shadow-sm backdrop-blur"
+    : "bg-gray-950"
+}`}
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
@@ -30,8 +32,8 @@ export default function Header() {
 />
             </div>
             <div>
-              <span className="font-bold text-lg leading-none block">DVS Automation</span>
-              <span className="text-xs text-gray-500 leading-none">Solutions LLC</span>
+              <span className="font-bold text-lg leading-none block text-white">DVS Automation</span>
+<span className="text-xs text-gray-400 leading-none">Solutions LLC</span>
             </div>
           </Link>
 
@@ -129,7 +131,7 @@ export default function Header() {
 </nav>
 
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg text-white hover:bg-white/10 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X size={20} /> : <Menu size={20} />}
