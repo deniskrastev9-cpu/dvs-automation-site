@@ -114,16 +114,12 @@ export default function Home() {
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </a>
 
-                <a
-                  href="#services"
-                  className="border border-gray-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-50 transition-colors text-gray-700"
-                >
+                <a href="#services"
+                  className="border border-gray-200 px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-50 transition-colors text-gray-700">
                   <div className="flex flex-col sm:flex-row gap-4">
-  <a
-    href="#contact"
-    className="group bg-black text-white px-7 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2"
-  >
-    Claim First Month Free
+                <a href="#contact"
+                  className="group bg-black text-white px-7 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2">
+     Claim First Month Free
     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
   </a>
 </div>
