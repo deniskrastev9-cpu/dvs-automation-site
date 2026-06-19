@@ -174,8 +174,8 @@ export default function AiDispatchFreightManagement() {
             <br /><br />
 
             <strong>Is this part of the Growth Package?</strong><br />
-            No. AI Receptionist, AI Dispatch, and broker counteroffer support are
-            part of the Pro Package.
+            No. AI Dispatch, and broker counteroffer support are part of our Custom Automation Solutions. 
+           
           </div>
         </ColorSection>
 
