@@ -27,7 +27,8 @@ export default function Pricing() {
           <div className="mb-6">
             <h2 className="text-xl font-bold">Starter</h2>
             <p className="text-gray-500 text-sm mt-2">
-              Never Miss Another Lead
+              Never Miss Another Lead.
+              
               Best for small businesses that want to capture customer inquiries when they can’t answer the phone.
             </p>
 
