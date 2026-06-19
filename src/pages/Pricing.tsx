@@ -122,8 +122,8 @@ export default function Pricing() {
                 Setup Fee: Starting at $999
               </p>
               <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                Advanced AI receptionist, dispatch workflows, broker counteroffer support,
-                fuel assistance, CRM integrations, and custom automations may require additional setup.
+                Includes advanced AI receptionist setup, lead qualification, appointment scheduling, CRM integration, and custom business automation tailored to your workflow.
+                Additional setup may be required for complex integrations and custom requirements. 
               </p>
             </div>
           </div>
