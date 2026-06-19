@@ -130,11 +130,10 @@ export default function Pricing() {
 
           <ul className="space-y-3 text-sm text-gray-600 flex-1">
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Everything in Growth</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> AI Receptionist</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> AI Dispatch & Freight Management Assistant</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> AI Broker Negotiation Assistant</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Counteroffer Support</li>
-            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Fuel Optimization Assistance</li>
+            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> AI Receptionist 24/7</li>
+            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Lead Qualification</li>
+            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Appointment Scheduling</li>
+            <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Advanced CRM Automation</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Custom AI Workflows</li>
             <li className="flex gap-2"><Check size={16} className="text-green-500 flex-shrink-0" /> Priority Setup</li>
           </ul>
