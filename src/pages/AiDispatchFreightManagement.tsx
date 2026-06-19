@@ -21,7 +21,7 @@ export default function AiDispatchFreightManagement() {
             fontSize: "14px",
             marginBottom: "18px"
           }}>
-            Included in the Pro Package
+            Custom Solution
           </p>
 
           <h1 style={{ fontSize: "48px", marginBottom: "15px" }}>
@@ -135,22 +135,22 @@ export default function AiDispatchFreightManagement() {
         </ColorSection>
 
         <ColorSection
-          title="Pro Package Includes"
-          color="#f0fdf4"
-          accent="#166534"
-        >
-          <ul style={{ lineHeight: "2" }}>
-            <li>AI Receptionist</li>
-            <li>AI Dispatch & Freight Management Assistant</li>
-            <li>AI Broker Negotiation Assistant</li>
-            <li>Counteroffer support</li>
-            <li>Load profitability assistance</li>
-            <li>Driver communication workflows</li>
-            <li>Fuel optimization assistance</li>
-            <li>Advanced CRM automation</li>
-            <li>Custom AI workflows</li>
-          </ul>
-        </ColorSection>
+          title="Custom Solution Includes"
+          color="#f0fdf4"
+          accent="#166534"
+        >
+          <ul style={{ lineHeight: "2" }}>
+            <li>Custom AI workflow design</li>
+            <li>Dispatch workflow automation</li>
+            <li>Customer communication automation</li>
+            <li>Driver communication workflows</li>
+            <li>CRM and software integrations</li>
+            <li>Business process automation</li>
+            <li>Custom AI assistants</li>
+            <li>Operational workflow optimization</li>
+            <li>Priority implementation support</li>
+         </ul>
+       </ColorSection>
 
         <ColorSection
           title="FAQ"
