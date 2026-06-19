@@ -71,16 +71,16 @@ export default function Pricing() {
           <div className="mb-6">
             <h2 className="text-xl font-bold">Growth</h2>
             <p className="text-gray-500 text-sm mt-2">
-              Best for businesses that want better customer inquiry automation, follow-up, and CRM automation.
+              Turn More Calls Into Customers. Best for businesses that want automated follow-up, appointment reminders, and better customer communication.
             </p>
 
             <p className="text-3xl font-bold mt-5">
-              $199<span className="text-sm text-gray-400">/mo</span>
+              $299<span className="text-sm text-gray-400">/mo</span>
             </p>
 
             <div className="mt-4 bg-gray-50 border border-gray-100 rounded-xl p-4">
               <p className="text-sm font-semibold text-gray-800">
-                Setup Fee: Custom
+                Setup Fee: Starting at $499
               </p>
               <p className="text-xs text-gray-500 mt-1 leading-relaxed">
                 Setup depends on workflows, integrations, CRM requirements, and automation complexity.
