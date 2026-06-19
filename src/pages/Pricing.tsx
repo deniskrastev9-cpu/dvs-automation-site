@@ -38,7 +38,7 @@ export default function Pricing() {
 
             <div className="mt-4 bg-gray-50 border border-gray-100 rounded-xl p-4">
               <p className="text-sm font-semibold text-gray-800">
-                Setup Fee: Custom
+                Setup Fee: Starting at $199
               </p>
               <p className="text-xs text-gray-500 mt-1 leading-relaxed">
                 Setup depends on your phone system, customer inquiry flow, and required connection.
