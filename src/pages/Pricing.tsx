@@ -110,16 +110,16 @@ export default function Pricing() {
           <div className="mb-6">
             <h2 className="text-xl font-bold">Pro</h2>
             <p className="text-gray-500 text-sm mt-2">
-              Best for advanced AI systems, AI receptionist, dispatch, freight, and custom workflows.
+              AI Receptionist & Business Automation. Best for businesses that want a 24/7 AI receptionist, lead qualification, scheduling support, and custom automation.
             </p>
 
             <p className="text-3xl font-bold mt-5">
-              $399<span className="text-sm text-gray-400">/mo</span>
+              $599<span className="text-sm text-gray-400">/mo</span>
             </p>
 
             <div className="mt-4 bg-gray-50 border border-gray-100 rounded-xl p-4">
               <p className="text-sm font-semibold text-gray-800">
-                Setup Fee: Custom
+                Setup Fee: Starting at $999
               </p>
               <p className="text-xs text-gray-500 mt-1 leading-relaxed">
                 Advanced AI receptionist, dispatch workflows, broker counteroffer support,
