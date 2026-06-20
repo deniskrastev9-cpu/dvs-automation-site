@@ -97,7 +97,7 @@ export default function Home() {
       </div>
 
       <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
-        Never Miss Customer Inquiries. Respond Faster. Book More Jobs.
+        Bring Your Business Into The Future With AI-Powered Customer Communication, Workflow Automation, and Custom Solutions Built Around Your Business.
       </h1>
 
       <p className="text-base md:text-xl text-gray-300 mb-10 leading-relaxed">
