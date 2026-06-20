@@ -16,7 +16,7 @@ export default function CRMAutomationSystem() {
           </h1>
 
           <p style={{ fontSize: "20px", opacity: 0.9 }}>
-            We build simple CRM and automation systems that help you track leads,
+            We build CRM and automation systems that help you track leads,
             follow up faster, and close more deals.
           </p>
         </div>
