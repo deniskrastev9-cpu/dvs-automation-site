@@ -10,6 +10,7 @@ import CRMAutomationSystem from "./pages/CRMAutomationSystem";
 import AiReceptionist from "./pages/AiReceptionist";
 import AiDispatchFreightManagement from "./pages/AiDispatchFreightManagement";
 import Pricing from "./pages/Pricing";
+import CustomAISolutions from "./pages/CustomAISolutions";
 
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/services/ai-receptionist" element={<AiReceptionist />} />
         <Route path="/ai-dispatch-freight-management" element={<AiDispatchFreightManagement />} />
         <Route path="/pricing" element={<Pricing />} />
+        <Route path="/services/custom-ai-solutions" element={<CustomAISolutions />} />
 
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
