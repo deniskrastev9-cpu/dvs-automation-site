@@ -88,6 +88,10 @@ export default function Header() {
               <Link to="/services/ai-receptionist" className={dropdownLink}>
                 🤖 AI Receptionist
               </Link>
+             
+               <Link to="/services/custom-ai-solutions" className={dropdownLink}>
+                🧠 Custom AI Solutions
+               </Link>
 
               <Link
                 to="/ai-dispatch-freight-management"
@@ -163,6 +167,13 @@ export default function Header() {
   onClick={() => setMenuOpen(false)}
 >
   🤖 AI Receptionist
+</Link>
+   <Link
+  className={mobileLink}
+  to="/services/custom-ai-solutions"
+  onClick={closeMenu}
+>
+  🧠 Custom AI Solutions
 </Link>
 
     <Link
