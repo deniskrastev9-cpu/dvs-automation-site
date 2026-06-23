@@ -3,15 +3,11 @@ import {
   Phone,
   MessageSquare,
   CheckCircle,
-  Zap,
   ArrowRight,
-  Star,
   Bot,
   Database,
   Truck,
   ClipboardList,
-  Clock,
-  Search,
   Brain,
   X,
 } from "lucide-react";
@@ -50,12 +46,10 @@ export default function Home() {
                 Limited Offer
               </p>
 
-              <h2 className="text-3xl font-bold mb-4">
-                First Month Free
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">First Month Free</h2>
 
               <p className="text-gray-600 mb-6">
-                Try our customer inquiry automation, missed-call follow-up, and business automation system free for your first month.
+                Try our AI receptionist, lead capture, follow-up automation, and business automation system free for your first month.
               </p>
 
               <a
@@ -74,64 +68,69 @@ export default function Home() {
       )}
 
       <main>
-        {/* Hero */}
-<section className="pt-36 pb-24 px-6 relative overflow-hidden bg-gray-950 text-white">
-  {/* Background Effects */}
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#2563eb,transparent_35%),radial-gradient(circle_at_top_right,#22c55e,transparent_30%),linear-gradient(135deg,#020617,#111827)]"></div>
+        {/* HERO */}
+        <section className="pt-36 pb-24 px-6 relative overflow-hidden bg-gray-950 text-white">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,#2563eb,transparent_35%),radial-gradient(circle_at_top_right,#22c55e,transparent_30%),linear-gradient(135deg,#020617,#111827)]"></div>
 
-  <div className="absolute top-24 left-10 w-32 h-32 border border-white/10 rounded-full animate-pulse"></div>
-  <div className="absolute top-40 right-16 w-44 h-44 border border-white/10 rounded-full animate-pulse"></div>
-  <div className="absolute bottom-16 left-1/3 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
+          <div className="absolute top-24 left-10 w-32 h-32 border border-white/10 rounded-full animate-pulse"></div>
+          <div className="absolute top-40 right-16 w-44 h-44 border border-white/10 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-16 left-1/3 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
 
-  {/* Top Banner */}
-  <div className="absolute top-16 md:top-24 left-0 right-0 text-center">
-    <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold backdrop-blur">
-      ⚡ AI Receptionists, Business Automation & Custom AI Solutions
-    </div>
-  </div>
+          <div className="absolute top-16 md:top-24 left-0 right-0 text-center">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 text-white px-5 py-2 rounded-full text-sm font-semibold backdrop-blur">
+              ⚡ AI Receptionists • Business Automation • Custom AI Solutions
+            </div>
+          </div>
 
-  <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center pt-24 md:pt-10">
-    <div>
-      <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur">
-        <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-        AI Automation for Local Businesses
-      </div>
+          <div className="relative z-10 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center pt-24 md:pt-10">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur">
+                <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+                AI Automation for Growing Businesses
+              </div>
 
-      <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
-        Bring your business into the future with AI-powered customer communication, workflow automation, and custom solutions.
-      </h1>
+              <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
+                AI Receptionists, Business Automation & Custom AI Solutions
+              </h1>
 
-      <p className="text-base md:text-xl text-gray-300 mb-10 leading-relaxed">
-        DVS Automation Solutions helps service businesses automate missed-call follow-up, customer inquiry automation, AI receptionist workflows, CRM automation, customer follow-up, and AI dispatch systems.
-      </p>
+              <p className="text-base md:text-xl text-gray-300 mb-10 leading-relaxed">
+                DVS Automation Solutions helps businesses automate customer communication, lead capture, follow-up, CRM workflows, AI receptionist systems, dispatch support, and custom AI solutions designed around their operations.
+              </p>
 
-      <div className="flex flex-col sm:flex-row gap-4">
-        <a
-          href="#contact"
-          className="group bg-black text-white px-7 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2"
-        >
-          Claim First Month Free
-          <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-        </a>
-      </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="#contact"
+                  className="group bg-black text-white px-7 py-4 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center justify-center gap-2"
+                >
+                  Claim First Month Free
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                </a>
 
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-300">
-        <div className="flex items-center gap-2">
-          <CheckCircle size={16} className="text-blue-400" />
-          First month free
-        </div>
+                <Link
+                  to="/services/custom-ai-solutions"
+                  className="bg-white/10 border border-white/20 text-white px-7 py-4 rounded-xl font-semibold hover:bg-white/20 transition-all flex items-center justify-center gap-2"
+                >
+                  Explore Custom Solutions
+                </Link>
+              </div>
 
-        <div className="flex items-center gap-2">
-          <CheckCircle size={16} className="text-blue-400" />
-          Fast setup
-        </div>
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-300">
+                <div className="flex items-center gap-2">
+                  <CheckCircle size={16} className="text-blue-400" />
+                  First month free
+                </div>
 
-        <div className="flex items-center gap-2">
-          <CheckCircle size={16} className="text-blue-400" />
-          24/7 automation
-        </div>
-      </div>
-    </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle size={16} className="text-blue-400" />
+                  Fast setup
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle size={16} className="text-blue-400" />
+                  24/7 automation
+                </div>
+              </div>
+            </div>
 
             {/* DEMO CARD */}
             <div className="relative">
@@ -143,7 +142,7 @@ export default function Home() {
                     <MessageSquare size={16} className="text-white" />
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">DVS Automation</p>
+                    <p className="font-semibold text-sm text-gray-900">DVS Automation</p>
                     <p className="text-xs text-green-500 font-medium">
                       Active • Responding instantly
                     </p>
@@ -213,7 +212,7 @@ export default function Home() {
                 Customer Inquiries Are Expensive. Losing Them Shouldn’t Be Normal.
               </h2>
               <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                Most local businesses lose opportunities because calls are missed, follow-up is slow, or customer information is not organized.
+                Most businesses lose opportunities because calls are missed, follow-up is slow, or customer information is not organized.
               </p>
             </div>
 
@@ -221,10 +220,10 @@ export default function Home() {
               {[
                 "Missed calls during busy hours",
                 "After-hours inquiries going unanswered",
-                "Customers inquiries not followed up fast enough",
+                "Customer inquiries not followed up fast enough",
                 "Customers choosing competitors first",
                 "Manual CRM and customer tracking",
-                "Dispatch and communication delays",
+                "Manual processes slowing down operations",
               ].map((problem) => (
                 <div
                   key={problem}
@@ -249,52 +248,75 @@ export default function Home() {
                 Smart Systems That Help You Book More Jobs
               </h2>
               <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                We build practical automation systems for service businesses, local companies, and logistics operations.
+                We build practical automation systems for service businesses, local companies, logistics operations, and organizations that need custom AI solutions.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
               <ServiceCard
+                link="/services/ai-receptionist"
+                icon={<Bot size={22} />}
+                title="AI Receptionist"
+                desc="Answer calls, collect customer information, qualify leads, and capture inquiries 24/7."
+              />
+
+              <ServiceCard
+                link="/services/custom-ai-solutions"
                 icon={<Brain size={22} />}
                 title="Custom AI Solutions"
-                desc="Custom AI and automation systems tailored to your workflow, business processes, and operational goals."
+                desc="Custom AI and automation solutions designed around your business, workflows, and operational needs."
               />
-              
+
               <ServiceCard
+                link="/services/missed-call-text-back"
                 icon={<Phone size={22} />}
                 title="Missed Call Text Back"
                 desc="Automatically text missed callers so they stay engaged instead of calling a competitor."
               />
 
               <ServiceCard
-                icon={<Bot size={22} />}
-                title="AI Receptionist"
-                desc="Answer basic questions, collect customer info, and capture inquiries 24/7."
-              />
-
-              <ServiceCard
+                link="/services/lead-capture"
                 icon={<ClipboardList size={22} />}
                 title="Customer Inquiry Automation"
-                desc="Collect customer inquiries from forms, calls, and messages and send them directly to your sheet or CRM."
+                desc="Collect inquiries from forms, calls, and messages and send them directly to your sheet or CRM."
               />
 
               <ServiceCard
+                link="/services/customer-follow-up"
                 icon={<MessageSquare size={22} />}
                 title="Customer Follow-Up Automation"
                 desc="Automatically follow up with prospects until they respond, book, or request more information."
               />
 
               <ServiceCard
+                link="/services/crm-automation"
                 icon={<Database size={22} />}
                 title="CRM Automation"
                 desc="Organize customer information, track leads, and reduce manual admin work."
               />
 
               <ServiceCard
+                link="/ai-dispatch-freight-management"
                 icon={<Truck size={22} />}
-                title="AI Dispatcher"
-                desc="Help trucking, logistics, and dispatch-heavy businesses collect job details and route requests faster."
+                title="AI Dispatch & Operations Automation"
+                desc="Custom automation for dispatch-heavy businesses that need better intake, communication, and workflow support."
               />
+            </div>
+
+            <div className="mt-12 bg-white border border-gray-200 rounded-3xl p-8 text-center shadow-sm">
+              <h3 className="text-2xl font-bold mb-3">
+                Don’t See Exactly What You Need?
+              </h3>
+              <p className="text-gray-500 max-w-2xl mx-auto mb-6">
+                We also build custom AI and automation solutions tailored to your business process, software, and operational goals.
+              </p>
+              <Link
+                to="/services/custom-ai-solutions"
+                className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition"
+              >
+                Explore Custom AI Solutions
+                <ArrowRight size={16} />
+              </Link>
             </div>
           </div>
         </section>
@@ -310,7 +332,7 @@ export default function Home() {
                 Simple Setup. Real Business Impact.
               </h2>
               <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-                We handle the automation setup so you can focus on serving customers.
+                We review your workflow, build the automation, and help your business capture more opportunities.
               </p>
             </div>
 
@@ -318,19 +340,19 @@ export default function Home() {
               <StepCard
                 step="01"
                 title="We Review Your Process"
-                desc="We look at how calls, customer inquiries, messages, and follow-ups currently work in your business."
+                desc="We look at how calls, inquiries, messages, follow-ups, and internal workflows currently operate."
               />
 
               <StepCard
                 step="02"
                 title="We Build the Automation"
-                desc="We create the messaging, customer inquiry automation, CRM, receptionist, or dispatch workflow your business needs."
+                desc="We create the AI receptionist, customer communication automation, CRM workflow, or custom system your business needs."
               />
 
               <StepCard
                 step="03"
-                title="You Capture More Opportunities"
-                desc="Your system starts responding faster, tracking customer inquiries, and helping turn them into booked jobs."
+                title="You Save Time and Capture More"
+                desc="Your system starts responding faster, tracking customer inquiries, reducing manual work, and helping turn opportunities into booked jobs."
               />
             </div>
           </div>
@@ -343,25 +365,27 @@ export default function Home() {
               Industries We Help
             </p>
             <h2 className="text-4xl font-bold mb-4">
-              Built for Local and Service-Based Businesses
+              Built for Service Businesses and Growing Organizations
             </h2>
             <p className="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
-              If your business depends on calls, leads, appointments, customers, or dispatching, automation can help.
+              If your business depends on calls, leads, appointments, customers, dispatching, or repeatable workflows, automation can help.
             </p>
 
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 "Roadside Assistance",
+                "Towing Companies",
                 "Trucking Companies",
                 "Logistics",
+                "Truck Repair",
+                "Auto Repair",
+                "Uniform & Linen Services",
+                "Equipment Rental",
                 "Plumbers",
                 "HVAC",
                 "Electricians",
                 "Roofers",
                 "Contractors",
-                "Landscapers",
-                "Painters",
-                "Pest Control",
                 "Home Services",
               ].map((industry) => (
                 <span
@@ -382,20 +406,23 @@ export default function Home() {
               <p className="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-3">
                 FAQ
               </p>
-              <h2 className="text-4xl font-bold mb-4">
-                Common Questions
-              </h2>
+              <h2 className="text-4xl font-bold mb-4">Common Questions</h2>
             </div>
 
             <div className="space-y-4">
               <FAQ
                 question="What does DVS Automation Solutions do?"
-                answer="We build automation systems that help businesses never miss customer inquiries, respond faster, follow up with customers, organize CRM data, and reduce manual work."
+                answer="We build AI and automation systems that help businesses answer calls, capture leads, follow up with customers, organize CRM data, streamline workflows, and reduce manual work."
+              />
+
+              <FAQ
+                question="Can DVS build custom AI solutions for my business?"
+                answer="Yes. We design custom AI and automation systems around your existing workflow, software, and business processes. Every business operates differently, which is why we offer solutions tailored to your specific needs."
               />
 
               <FAQ
                 question="Do I need new software?"
-                answer="Not always. We can connect your automation to tools you already use, including Google Sheets, forms, phone systems, CRMs, and messaging platforms."
+                answer="Not always. We can connect your automation to tools you already use, including Google Sheets, forms, phone systems, CRMs, calendars, and messaging platforms."
               />
 
               <FAQ
@@ -404,19 +431,19 @@ export default function Home() {
               />
 
               <FAQ
-                question="Do you offer AI receptionist or AI dispatcher systems?"
-                answer="Yes. We can build AI receptionist workflows for local businesses and AI dispatcher systems for trucking, logistics, and dispatch-heavy operations."
+                question="Do you offer AI receptionist or dispatch automation systems?"
+                answer="Yes. We build AI receptionist workflows for businesses and custom dispatch or operations automation systems for companies with more complex processes."
               />
 
               <FAQ
                 question="How fast can you set this up?"
-                answer="Many basic systems can be set up quickly, depending on your business process and what tools need to be connected."
+                answer="Many basic systems can be set up quickly, depending on your business process and what tools need to be connected. Custom systems depend on complexity and integrations."
               />
             </div>
           </div>
         </section>
 
-        {/* CONTACT / LEAD FORM */}
+        {/* CONTACT */}
         <section id="contact" className="py-24 px-6 bg-gradient-to-br from-slate-900 to-gray-950 text-white">
           <div className="max-w-4xl mx-auto text-center mb-10">
             <p className="text-sm font-semibold uppercase tracking-widest text-blue-300 mb-4">
@@ -436,10 +463,10 @@ export default function Home() {
             plan={selectedOffer}
             service={
               selectedOffer === "First Month Free"
-              ? "Homepage First Month Free Offer"
-              : "Homepage Free Consultation"
+                ? "Homepage First Month Free Offer"
+                : "Homepage Free Consultation"
             }
-            />
+          />
         </section>
       </main>
 
@@ -447,7 +474,7 @@ export default function Home() {
       <section className="bg-gray-50 border-t border-gray-200 px-6 py-8">
         <div className="max-w-6xl mx-auto">
           <p className="text-xs text-gray-500 text-center leading-relaxed">
-            By providing your phone number, you consent to receive SMS messages related to your inquiry or services. Reply STOP to opt out.
+            By providing your phone number, you consent to receive SMS messages related to your inquiry or services. Reply STOP to opt out. Consent is not a condition of purchase.
           </p>
         </div>
       </section>
@@ -470,7 +497,7 @@ export default function Home() {
             </div>
 
             <p className="text-xs text-gray-500">
-              Helping businesses never miss customer inquiries, respond faster, and book more jobs with automation.
+              Helping businesses answer customers, capture leads, automate workflows, and grow smarter with AI.
             </p>
           </div>
 
@@ -506,18 +533,30 @@ export default function Home() {
 
 /* COMPONENTS */
 
-function ServiceCard({ icon, title, desc }: any) {
+function ServiceCard({ icon, title, desc, link }: any) {
   return (
-    <div className="group bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-lg hover:border-gray-300 transition-all duration-300">
-      <div className="w-12 h-12 bg-gray-100 group-hover:bg-gray-900 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
-        <span className="text-gray-700 group-hover:text-white transition-colors duration-300">
-          {icon}
-        </span>
-      </div>
+    <Link to={link} className="block h-full">
+      <div className="group h-full bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-xl hover:border-gray-300 transition-all duration-300 hover:-translate-y-1">
+        <div className="w-12 h-12 bg-gray-100 group-hover:bg-gray-900 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
+          <span className="text-gray-700 group-hover:text-white transition-colors duration-300">
+            {icon}
+          </span>
+        </div>
 
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
-      <p className="text-gray-500 leading-relaxed text-sm">{desc}</p>
-    </div>
+        <h3 className="text-xl font-bold mb-3 group-hover:text-gray-900">
+          {title}
+        </h3>
+
+        <p className="text-gray-500 leading-relaxed text-sm mb-5">
+          {desc}
+        </p>
+
+        <div className="text-sm font-semibold text-gray-900 flex items-center gap-2">
+          Learn More
+          <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+        </div>
+      </div>
+    </Link>
   );
 }
 
@@ -575,4 +614,4 @@ function ChatBubbleRight({ label, text }: any) {
       </div>
     </div>
   );
-                    }
+}
