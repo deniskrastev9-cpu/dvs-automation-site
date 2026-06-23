@@ -12,6 +12,7 @@ import {
   ClipboardList,
   Clock,
   Search,
+  Brain,
   X,
 } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -253,6 +254,12 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
+              <ServiceCard
+                icon={<Brain size={22} />}
+                title="Custom AI Solutions"
+                desc="Custom AI and automation systems tailored to your workflow, business processes, and operational goals."
+              />
+              
               <ServiceCard
                 icon={<Phone size={22} />}
                 title="Missed Call Text Back"
