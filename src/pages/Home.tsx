@@ -90,7 +90,7 @@ export default function Home() {
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold leading-[1.08] tracking-tight mb-6">
-                AI Receptionists, Business Automation & Custom AI Solutions
+                Bring Your Business Into The Future With AI Receptionists, Business Automation & Custom AI Solutions
               </h1>
 
               <p className="text-base md:text-xl text-gray-300 mb-10 leading-relaxed">
