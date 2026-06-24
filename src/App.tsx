@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import ScrollToHash from "./components/ScrollToHash";
+import ScrollToTop from "./components/ScrollToTop";
 import MissedCallTextBack from "./pages/MissedCallTextBack";
 import CustomerFollowUpAutomation from "./pages/CustomerFollowUpAutomation";
 import LeadCaptureAutomation from "./pages/LeadCaptureAutomation";
@@ -19,6 +20,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToHash />
+      <ScrollToTop />
       <Header />
       <div className="pt-20">
       <Routes>
