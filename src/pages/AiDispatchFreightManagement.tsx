@@ -108,44 +108,44 @@ export default function AiDispatchFreightManagement() {
 
         <ColorSection title="Freight Broker Business Process Automation" color="#f8fafc" accent="#334155">
           <ul style={{ lineHeight: "2" }}>
-            <li>Quote request workflows</li>
-            <li>CRM automation</li>
-            <li>Customer onboarding</li>
-            <li>Carrier communication</li>
-            <li>Invoice and document workflows</li>
-            <li>Email and SMS follow-up sequences</li>
-            <li>Lead management automation</li>
-            <li>Internal team notifications</li>
+            <li>●Quote request workflows</li>
+            <li>●CRM automation</li>
+            <li>●Customer onboarding</li>
+            <li>●Carrier communication</li>
+            <li>●Invoice and document workflows</li>
+            <li>●Email and SMS follow-up sequences</li>
+            <li>●Lead management automation</li>
+            <li>●Internal team notifications</li>
           </ul>
         </ColorSection>
 
         <ColorSection title="What It Can Help With" color="#ffffff" accent="#0f172a">
           <ul style={{ lineHeight: "2" }}>
-            <li>AI broker negotiation and counteroffer support</li>
-            <li>Load profitability review</li>
-            <li>Dispatch workflow automation</li>
-            <li>Driver communication support</li>
-            <li>Freight opportunity organization</li>
-            <li>Fuel cost assistance and cheaper fuel option research</li>
-            <li>Customer, broker, carrier, and driver intake</li>
-            <li>Advanced CRM and operations automation</li>
-            <li>Freight workflow automation</li>
-            <li>AI dispatch software support</li>
+            <li>●AI broker negotiation and counteroffer support</li>
+            <li>●Load profitability review</li>
+            <li>●Dispatch workflow automation</li>
+            <li>●Driver communication support</li>
+            <li>●Freight opportunity organization</li>
+            <li>●Fuel cost assistance and cheaper fuel option research</li>
+            <li>●Customer, broker, carrier, and driver intake</li>
+            <li>●Advanced CRM and operations automation</li>
+            <li>●Freight workflow automation</li>
+            <li>●AI dispatch software support</li>
           </ul>
         </ColorSection>
 
         <ColorSection title="Benefits" color="#f0fdf4" accent="#166534">
           <ul style={{ lineHeight: "2" }}>
-            <li>Helps pursue better revenue per load</li>
-            <li>Reduces dispatcher workload</li>
-            <li>Improves broker communication speed</li>
-            <li>Organizes load details in one place</li>
-            <li>Supports faster driver and dispatch communication</li>
-            <li>Helps identify potential fuel-saving opportunities</li>
-            <li>Improves operational efficiency</li>
-            <li>Provides 24/7 information capture</li>
-            <li>Reduces repetitive calls, texts, and emails</li>
-            <li>Helps freight teams respond faster</li>
+            <li>●Helps pursue better revenue per load</li>
+            <li>●Reduces dispatcher workload</li>
+            <li>●Improves broker communication speed</li>
+            <li>●Organizes load details in one place</li>
+            <li>●Supports faster driver and dispatch communication</li>
+            <li>●Helps identify potential fuel-saving opportunities</li>
+            <li>●Improves operational efficiency</li>
+            <li>●Provides 24/7 information capture</li>
+            <li>●Reduces repetitive calls, texts, and emails</li>
+            <li>●Helps freight teams respond faster</li>
           </ul>
         </ColorSection>
 
@@ -159,45 +159,45 @@ export default function AiDispatchFreightManagement() {
           </p>
 
           <ul style={{ lineHeight: "2" }}>
-            <li>Freight broker automation systems</li>
-            <li>Bulk dispatch automation</li>
-            <li>Freight forwarding automation</li>
-            <li>Freight broker business process automation</li>
-            <li>AI dispatch software</li>
-            <li>AI for dispatch companies</li>
-            <li>AI for freight brokers</li>
-            <li>Logistics business process automation</li>
+            <li>●Freight broker automation systems</li>
+            <li>●Bulk dispatch automation</li>
+            <li>●Freight forwarding automation</li>
+            <li>●Freight broker business process automation</li>
+            <li>●AI dispatch software</li>
+            <li>●AI for dispatch companies</li>
+            <li>●AI for freight brokers</li>
+            <li>●Logistics business process automation</li>
           </ul>
         </ColorSection>
 
         <ColorSection title="Who This Is For" color="#eef2ff" accent="#1e3a8a">
           <ul style={{ lineHeight: "2" }}>
-            <li>Trucking companies</li>
-            <li>Freight brokers</li>
-            <li>Freight forwarders</li>
-            <li>Dispatch companies</li>
-            <li>Logistics companies</li>
-            <li>Fleet operators</li>
-            <li>Owner operators</li>
-            <li>Freight management businesses</li>
-            <li>Transportation companies</li>
-            <li>3PL providers</li>
+            <li>●Trucking companies</li>
+            <li>●Freight brokers</li>
+            <li>●Freight forwarders</li>
+            <li>●Dispatch companies</li>
+            <li>●Logistics companies</li>
+            <li>●Fleet operators</li>
+            <li>●Owner operators</li>
+            <li>●Freight management businesses</li>
+            <li>●Transportation companies</li>
+            <li>●3PL providers</li>
           </ul>
         </ColorSection>
 
         <ColorSection title="Custom Solution Includes" color="#f0fdf4" accent="#166534">
           <ul style={{ lineHeight: "2" }}>
-            <li>Custom AI workflow design</li>
-            <li>Dispatch workflow automation</li>
-            <li>Freight broker automation support</li>
-            <li>Customer communication automation</li>
-            <li>Driver communication workflows</li>
-            <li>Carrier and broker communication workflows</li>
-            <li>CRM and software integrations</li>
-            <li>Business process automation</li>
-            <li>Custom AI assistants</li>
-            <li>Operational workflow optimization</li>
-            <li>Priority implementation support</li>
+            <li>●Custom AI workflow design</li>
+            <li>●Dispatch workflow automation</li>
+            <li>●Freight broker automation support</li>
+            <li>●Customer communication automation</li>
+            <li>●Driver communication workflows</li>
+            <li>●Carrier and broker communication workflows</li>
+            <li>●CRM and software integrations</li>
+            <li>●Business process automation</li>
+            <li>●Custom AI assistants</li>
+            <li>●Operational workflow optimization</li>
+            <li>●Priority implementation support</li>
           </ul>
         </ColorSection>
 
@@ -210,14 +210,14 @@ export default function AiDispatchFreightManagement() {
           </p>
 
           <ul style={{ lineHeight: "2", color: "white" }}>
-            <li>AI dispatcher assistant</li>
-            <li>Broker negotiation support</li>
-            <li>Load profitability analysis</li>
-            <li>Route and home-time planning</li>
-            <li>Driver communication</li>
-            <li>Document automation</li>
-            <li>Fleet dashboards</li>
-            <li>Freight workflow automation</li>
+            <li>●AI dispatcher assistant</li>
+            <li>●Broker negotiation support</li>
+            <li>●Load profitability analysis</li>
+            <li>●Route and home-time planning</li>
+            <li>●Driver communication</li>
+            <li>●Document automation</li>
+            <li>●Fleet dashboards</li>
+            <li>●Freight workflow automation</li>
           </ul>
         </ColorSection>
 
