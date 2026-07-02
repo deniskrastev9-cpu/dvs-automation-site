@@ -201,9 +201,9 @@ export default function AiDispatchFreightManagement() {
           </ul>
         </ColorSection>
 
-        <ColorSection title="Coming Soon: PURGAV" color="#020617" accent="#38bdf8" dark>
+        <ColorSection title="Coming Soon: Our AI Freight Operations Platform" color="#020617" accent="#38bdf8" dark>
           <p style={{ lineHeight: "2", color: "white" }}>
-            DVS Automation Solutions LLC is developing <strong>PURGAV</strong>, an
+            DVS Automation Solutions LLC is developing <strong>Our AI Freight Operations Platform</strong>, an
             AI-powered freight operations platform designed for trucking companies,
             freight brokers, dispatch companies, freight forwarders, and logistics
             providers.
